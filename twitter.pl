@@ -69,3 +69,32 @@ if($client->authorized){
 }else{
   print "Client is not authorized anymore!";
 }
+
+# Post Hackerspace status on website
+use DBI();
+
+$host = "";
+$database = "";
+$tablename = "";
+$user = "";
+$pw = "";
+$table = "";
+
+$dsn = "DBI:mysql:database=$database;host=$host";
+$con = DBI->connect($dsn, $user, $pw);
+
+my $query;
+
+if ($do =~ m/^open$/) {
+    $query = "INSERT INTO ". $table ." (pub_date, duration, open) VALUES ('". $date ."', 0, 't')";
+}
+elsif($do =~ m/^close[d]{0,1}$/) {
+    $query = "INSERT INTO ". $table ." (pub_date, duration, open) VALUES ('". $date ."', 0, 'f')";
+}
+elsif($do =~ m/^custom$/ && param("hours")) {
+    $hours = param("hours");
+    $query = "INSERT INTO ". $table ." (pub_date, duration, open) VALUES ('" . $date . "', " . $hours . ", 't')";
+}
+
+$execute = $con->do($query);
+$con->disconnect()
