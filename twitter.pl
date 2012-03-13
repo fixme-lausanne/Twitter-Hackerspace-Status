@@ -42,12 +42,15 @@ my $date = strftime "%d.%m.%Y %H:%M", localtime;
 if(param("do")) {
   my $do = param("do");
   if ($do =~ m/^open$/) {
+    rename("closed", "open");
     $status ="The space is now open, you are welcome to come over! (" . $date . ")";
   }
   elsif($do =~ m/^close[d]{0,1}$/) {
+    rename("open", "closed");
     $status = "The space is now closed, see you later! (" . $date . ")";
   }
   elsif($do =~ m/^custom$/ && param("hours")) {
+    rename("closed", "open");
     my $hours = param("hours");
     $status = "The space is open for approx. " . $hours . "h, you are welcome to come over! (" . $date . ")";
   }
@@ -55,11 +58,16 @@ if(param("do")) {
     print "USAGE: append ?do=open , ?do=close or ?do=custom&hours=x to the url";
     exit();
   }
-}
-else {
+} elsif (param("req")) {
+   if (-e "open") {
+       print "The hackerspace seems to be open";
+   } else
+      print "The hackerspace seems to be closed"
+   }
+} else {
     print "USAGE: append ?do=open , ?do=close or ?do=custom&hours=x to the url";
     exit();
-}
+} 
 
 # Post status
 if($client->authorized){
