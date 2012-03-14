@@ -55,7 +55,7 @@ if(param("do")) {
     $status = "The space is open for approx. " . $hours . "h, you are welcome to come over! (" . $date . ")";
   }
   else {
-    print "USAGE: append ?do=open , ?do=close or ?do=custom&hours=x to the url";
+    print "USAGE: append ?do=open to open the space, ?do=close to close the space or ?do=custom&hours=x to the url. You can also request the state of the hackerspace with ?request";
     exit();
   }
 } elsif (param("request")) {
