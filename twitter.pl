@@ -49,7 +49,7 @@ if(param("do")) {
     rename("open", "closed");
     $status = "The space is now closed, see you later! (" . $date . ")";
   }
-  elsif($do =~ m/^custom$/ && param("hours")) {
+  elsif($do =~ m/^custom$/ && param("hours") || $do =~ m/^open$/ && param("hours") ) {
     rename("closed", "open");
     my $hours = param("hours");
     $status = "The space is open for approx. " . $hours . "h, you are welcome to come over! (" . $date . ")";
@@ -58,12 +58,13 @@ if(param("do")) {
     print "USAGE: append ?do=open , ?do=close or ?do=custom&hours=x to the url";
     exit();
   }
-} elsif (param("req")) {
+} elsif (param("request")) {
    if (-e "open") {
        print "The hackerspace seems to be open";
-   } else
+   } else {
       print "The hackerspace seems to be closed"
    }
+} elsif (
 } else {
     print "USAGE: append ?do=open , ?do=close or ?do=custom&hours=x to the url";
     exit();
