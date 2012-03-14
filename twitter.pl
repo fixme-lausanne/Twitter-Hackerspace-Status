@@ -61,12 +61,14 @@ if(param("do")) {
 } elsif (param("request")) {
    if (-e "open") {
        print "The hackerspace seems to be open";
-   } else {
+   } else (-e "closed") {
       print "The hackerspace seems to be closed"
+   } else {
+       print "No information on the state of the hackerspace";
    }
-} elsif (
+}
 } else {
-    print "USAGE: append ?do=open , ?do=close or ?do=custom&hours=x to the url";
+    print "USAGE: append ?do=open to open the space, ?do=close to close the space or ?do=custom&hours=x to the url. You can also request the state of the hackerspace with ?request";
     exit();
 } 
 
