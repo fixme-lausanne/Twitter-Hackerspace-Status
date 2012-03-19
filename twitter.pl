@@ -18,7 +18,7 @@ sub Usage {
     ?do=close           Close the space,
     ?do=open            Open the space,
     ?do=custom&hours=x  Open the space for a specific time,
-    ?request            Request the state of the hackerspace (open/closed).</pre>";
+    ?request            Request the state of the hackerspace (open/closed).</pre>\n";
     exit();
 }
 
@@ -75,6 +75,7 @@ if(param("do")) {
    } else {
        print "No information on the state of the hackerspace";
    }
+   exit();
 } else {
     &Usage();
 } 
