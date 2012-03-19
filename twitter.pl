@@ -70,7 +70,7 @@ if(param("do")) {
 } elsif (param("request")) {
    if (-e "open") {
        print "The hackerspace seems to be open";
-   } else (-e "closed") {
+   } elsif (-e "closed") {
       print "The hackerspace seems to be closed"
    } else {
        print "No information on the state of the hackerspace";
