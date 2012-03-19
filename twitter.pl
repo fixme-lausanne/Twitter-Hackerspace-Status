@@ -75,7 +75,6 @@ if(param("do")) {
    } else {
        print "No information on the state of the hackerspace";
    }
-}
 } else {
     &Usage();
 } 
