@@ -5,12 +5,22 @@
 #   twitter.pl?do=open              #
 #   twitter.pl?do=close             #
 #   twitter.pl?do=custom&hours=x    #
+#   twitter.pl?request              #
 #####################################
 
 use Net::Twitter;
 use POSIX qw(strftime);
 use CGI qw(:standard);
 print "Content-Type: text/html", "\n\n";
+
+sub Usage {
+    print "<pre>USAGE:
+    ?do=close           Close the space,
+    ?do=open            Open the space,
+    ?do=custom&hours=x  Open the space for a specific time,
+    ?request            Request the state of the hackerspace (open/closed).</pre>";
+    exit();
+}
 
 # IP check
 my $ip = $ENV{'REMOTE_ADDR'};
@@ -55,8 +65,7 @@ if(param("do")) {
     $status = "The space is open for approx. " . $hours . "h, you are welcome to come over! (" . $date . ")";
   }
   else {
-    print "USAGE: append ?do=open to open the space, ?do=close to close the space or ?do=custom&hours=x to the url. You can also request the state of the hackerspace with ?request";
-    exit();
+    &Usage();
   }
 } elsif (param("request")) {
    if (-e "open") {
@@ -68,8 +77,7 @@ if(param("do")) {
    }
 }
 } else {
-    print "USAGE: append ?do=open to open the space, ?do=close to close the space or ?do=custom&hours=x to the url. You can also request the state of the hackerspace with ?request";
-    exit();
+    &Usage();
 } 
 
 # Post status
