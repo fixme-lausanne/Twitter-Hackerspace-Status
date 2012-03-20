@@ -34,8 +34,12 @@ api = {
   'duration': 0, # Custom field for the open duration
   'status':   '',
   'lastchange': 0,
-  'events': [],
-  'feeds': {},
+  'events':   [],
+  'feeds':    [
+                {'name': 'site', 'type': 'application/rss+xml', 'url': 'https://fixme.ch/rss.xml'},
+                {'name': 'wiki', 'type': 'application/rss+xml', 'url': 'https://fixme.ch/w/index.php?title=Special:RecentChanges&feed=atom'},
+                {'name': 'calendar', 'type': 'text/calendar','url': 'https://www.google.com/calendar/ical/sruulkb8vh28dim9bcth8emdm4%40group.calendar.google.com/public/basic.ics'},
+              ],
 }
 
 #
