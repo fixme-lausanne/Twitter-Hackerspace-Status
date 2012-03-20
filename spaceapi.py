@@ -33,7 +33,7 @@ api = {
   'open':     0,
   'duration': 0, # Custom field for the open duration
   'status':   '',
-  'lastchange': '',
+  'lastchange': 0,
   'events': [],
   'feeds': {},
 }
@@ -58,7 +58,7 @@ else:
 #
 # Update API
 #
-api['lastchange'] = res_date.isoformat();
+api['lastchange'] = time.mktime(res_date.timetuple());
 api['open'] = int(res_open)
 api['duration'] = int(res_duration)
 diff = datetime.now() - res_date
