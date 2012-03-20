@@ -4,8 +4,12 @@ Hackerspace Status
 Use by the rfid doorlock (https://fixme.ch/wiki/RFID_Doorlock) to tweet the hackerspace status.
 The script is authenticated to twitter using OAuth. It saves the status in a mysql database and a lock file.
 
-Commands
---------
+Spaceapi.py
+-----------
+TODO
+
+Twitter.pl
+----------
 
 - ?do=close           Close the space,
 - ?do=open            Open the space,
