@@ -16,21 +16,21 @@ api = {
   'api':      '0.12',
   'space':    'FIXME Hackerspace',
   'logo':     '',
-  'icon':     [
-              ],
+  'icon':     {
+              },
   'url':      'https://fixme.ch',
   'address':  'Rue de Genève 79, 1004 Lausanne, Switzerland',
   'contact':  {
                 'phone':      '+41216220734',
-                'keymaster':  '+41797440880',
+                'keymaster':  ['+41797440880'],
                 'irc':        'irc://freenode/#fixme',
                 'twitter':    '@_fixme',
                 'email':      'info@fixme.ch',
                 'ml':         'hackerspace-lausanne@lists.saitis.net',
               },
-  'lon':      '6.613828',
-  'lat':      '46.524652',
-  'open':     0,
+  'lon':      6.613828,
+  'lat':      46.524652,
+  'open':     False,
   'duration': 0, # Custom field for the open duration
   'status':   '',
   'lastchange': 0,
@@ -63,7 +63,7 @@ else:
 # Update API
 #
 api['lastchange'] = time.mktime(res_date.timetuple());
-api['open'] = int(res_open)
+api['open'] = bool(res_open)
 api['duration'] = int(res_duration)
 diff = datetime.now() - res_date
 if res_open == True and diff.seconds / 3600 > res_duration:
