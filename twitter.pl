@@ -103,17 +103,22 @@ $dsn = "DBI:mysql:database=$database;host=$host";
 $con = DBI->connect($dsn, $user, $pw);
 
 my $query;
+if (param("do")) {
+  my $do=param("do");
+  my $pub_date = strftime "%Y-%m-%d %H:%M:%S", localtime;
+  if ($do =~ m/^open$/) {
+      $query = "INSERT INTO ". $table ." (pub_date, duration, open) VALUES ('". $pub_date ."', 0, 1)";
+  }
+  elsif($do =~ m/^close[d]{0,1}$/) {
+      $query = "INSERT INTO ". $table ." (pub_date, duration, open) VALUES ('". $pub_date ."', 0, 0)";
+  }
+  elsif($do =~ m/^custom$/ && param("hours")) {
+      $hours = param("hours");
+      $query = "INSERT INTO ". $table ." (pub_date, duration, open) VALUES ('" . $pub_date . "', " . $hours . ", 1)";
+  }
 
-if ($do =~ m/^open$/) {
-    $query = "INSERT INTO ". $table ." (pub_date, duration, open) VALUES ('". $date ."', 0, 't')";
+  if ($query) {
+    $execute = $con->do($query);
+  }
 }
-elsif($do =~ m/^close[d]{0,1}$/) {
-    $query = "INSERT INTO ". $table ." (pub_date, duration, open) VALUES ('". $date ."', 0, 'f')";
-}
-elsif($do =~ m/^custom$/ && param("hours")) {
-    $hours = param("hours");
-    $query = "INSERT INTO ". $table ." (pub_date, duration, open) VALUES ('" . $date . "', " . $hours . ", 't')";
-}
-
-$execute = $con->do($query);
-$con->disconnect()
+$con->disconnect();
