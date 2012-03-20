@@ -68,7 +68,7 @@ api['lastchange'] = time.mktime(res_date.timetuple());
 api['open'] = bool(res_open)
 api['duration'] = int(res_duration)
 diff = datetime.now() - res_date
-if res_open == True and diff.seconds / 3600 > res_duration:
+if res_open == True and diff.seconds / 3600 >= res_duration:
   api['status'] = 'The space may be closed, the inital duration (%i hour(s)) is exceeded.'  % res_duration
 
 #
