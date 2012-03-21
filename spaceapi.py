@@ -15,10 +15,10 @@ print
 api = {
   'api':      '0.12',
   'space':    'FIXME Hackerspace',
-  'logo':     '',
+  'logo':     'https://fixme.ch/sites/default/files/Logo5_v3.png',
   'icon':     {
-                'open': '',
-                'closed': '',
+                'open': 'https://fixme.ch/w/logo.png',
+                'closed': 'https://fixme.ch/w/logo.png',
               },
   'url':      'https://fixme.ch',
   'address':  'Rue de Genève 79, 1004 Lausanne, Switzerland',
