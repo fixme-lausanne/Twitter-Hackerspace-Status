@@ -17,8 +17,8 @@ api = {
   'space':    'FIXME Hackerspace',
   'logo':     'https://fixme.ch/sites/default/files/Logo5_v3.png',
   'icon':     {
-                'open': 'https://fixme.ch/w/logo.png',
-                'closed': 'https://fixme.ch/w/logo.png',
+                'open': 'https://fixme.ch/sites/default/files/logo-open.png',
+                'closed': 'https://fixme.ch/sites/default/files/logo-closed.png',
               },
   'url':      'https://fixme.ch',
   'address':  'Rue de Genève 79, 1004 Lausanne, Switzerland',
