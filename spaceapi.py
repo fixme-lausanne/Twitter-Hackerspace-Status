@@ -7,6 +7,8 @@ from pprint import pprint
 
 cgitb.enable()
 print 'Content-Type: application/json'
+print 'Access-Control-Allow-Origin: *'
+print 'Cache-Control: no-cache'
 print
 
 #
