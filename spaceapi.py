@@ -16,7 +16,7 @@ print
 #
 api = {
   'api':      '0.12',
-  'space':    'FIXME Hackerspace',
+  'space':    'FIXME',
   'logo':     'https://fixme.ch/sites/default/files/Logo5_v3.png',
   'icon':     {
                 'open': 'https://fixme.ch/sites/default/files/logo-open.png',
