@@ -15,7 +15,7 @@ print
 # Default description of the Space API
 #
 api = {
-  'api':      '0.12',
+  'api':      '0.13',
   'space':    'FIXME',
   'logo':     'https://fixme.ch/sites/default/files/Logo5_v3.png',
   'icon':     {
