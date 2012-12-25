@@ -17,7 +17,7 @@ print
 api = {
   'api':      '0.13',
   'space':    'FIXME',
-  'logo':     'https://fixme.ch/sites/default/files/Logo5_v3.png',
+  'logo':     'https://fixme.ch/sites/default/files/Logo5_v3-mini.png',
   'icon':     {
                 'open': 'https://fixme.ch/sites/default/files/logo-open.png',
                 'closed': 'https://fixme.ch/sites/default/files/logo-closed.png',
