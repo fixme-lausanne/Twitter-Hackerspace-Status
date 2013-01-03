@@ -31,6 +31,8 @@ api = {
                 'twitter':    '@_fixme',
                 'email':      'info@fixme.ch',
                 'ml':         'hackerspace-lausanne@lists.saitis.net',
+                'facebook':   'https://www.facebook.com/fixmehackerspace',
+                'wiki':       'https://wiki.fixme.ch',
               },
   'lon':      6.613828,
   'lat':      46.524652,
@@ -38,7 +40,7 @@ api = {
   'duration': 0, # Custom field for the open duration
   'status':   '',
   'lastchange': 0,
-  'events':   [],
+  'events':   ['https://fixme.ch/civicrm/event/past?html=1&start=20101201&order=1&reset=1'],
   'feeds':    [
                 {'name': 'site', 'type': 'application/rss+xml', 'url': 'https://fixme.ch/rss.xml'},
                 {'name': 'wiki', 'type': 'application/rss+xml', 'url': 'https://fixme.ch/w/index.php?title=Special:RecentChanges&feed=atom'},
@@ -49,19 +51,23 @@ api = {
 #
 # Get Open/Close status
 #
-db = MySQLdb.connect(host="localhost", user="", passwd="", db="")
-c = db.cursor()
-c.execute('select pub_date, duration, open from hackerspace_status order by id desc limit 1;')
-result = c.fetchone()
-db.close()
+try:
+    db = MySQLdb.connect(host="localhost", user="", passwd="", db="")
+    c = db.cursor()
+    c.execute('select pub_date, duration, open from hackerspace_status order by id desc limit 1;')
+    result = c.fetchone()
+    db.close()
+except Exception,e:
+    result = None
 
-if result != None:
+if result != None and len(result) == 3:
   res_date = result[0]
   res_duration = result[1]
   res_open = result[2]
 else:
-  print 'There was an error getting the status'
-  sys.exit(1)
+    res_date = datetime.now()
+    res_duration = 0
+    res_open = False
 
 #
 # Update API

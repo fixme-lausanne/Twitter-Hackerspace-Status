@@ -6,6 +6,7 @@ Both scripts use MySQL to put/pull the state of the hackerspace. The schema can 
 Spaceapi.py
 -----------
 Implements the Space API from [hackerspaces.nl](https://hackerspaces.nl/spaceapi/).
+Needs python-mysqldb
 
 - Add `duration` field, the number of hour(s) the space will be open from `lastchange`
 
