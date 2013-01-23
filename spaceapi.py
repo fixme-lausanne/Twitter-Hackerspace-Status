@@ -15,7 +15,7 @@ print
 # Default description of the Space API
 #
 api = {
-  'api':      '0.13',
+  'api':      '0.12',
   'space':    'FIXME',
   'logo':     'https://fixme.ch/sites/default/files/Logo5_v3-mini.png',
   'icon':     {
@@ -52,7 +52,7 @@ api = {
 # Get Open/Close status
 #
 try:
-    db = MySQLdb.connect(host="localhost", user="", passwd="", db="")
+    db = MySQLdb.connect(host="localhost", user="***REMOVED***", passwd="***REMOVED***", db="hackerspace_status")
     c = db.cursor()
     c.execute('select pub_date, duration, open from hackerspace_status order by id desc limit 1;')
     result = c.fetchone()
