@@ -1,0 +1,1191 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//CiviCRM//NONSGML CiviEvent iCal//EN
+X-WR-TIMEZONE:Europe/Zurich
+METHOD:PUBLISH
+BEGIN:VEVENT
+UID:CiviCRM_EventID_71_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Defcon CTF prequals
+DESCRIPTION:\n 	https://2013.legitbs.net\n 	https://wiki.fixme
+ .ch/CTF
+CATEGORIES:Workshop
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20130615T020000
+DTSTART;VALUE=DATE-TIME:20130615T020000
+DTEND;VALUE=DATE-TIME:20130617T020000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=71
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_70_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:EB CTF Prequals
+DESCRIPTION:\n 	https://fixme.ch/wiki/CTFriday
+CATEGORIES:Workshop
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20130601T140000
+DTSTART;VALUE=DATE-TIME:20130601T140000
+DTEND;VALUE=DATE-TIME:20130601T220000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=70
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_68_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Alternatives Urbaines 2013
+DESCRIPTION:\n 	https://fixme.ch/wiki/AlternativesUrbaines2013
+CATEGORIES:Workshop
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20130503T090000
+DTSTART;VALUE=DATE-TIME:20130503T090000
+DTEND;VALUE=DATE-TIME:20130504T180000
+LOCATION:Avenue Dapples 50\n Maison de quartier sous-gare\n
+  Lausanne\, \n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=68
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_69_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Cryptoparty #1
+DESCRIPTION:\n 	https://fixme.ch/wiki/Cryptoparty1
+CATEGORIES:Workshop
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20130419T190000
+DTSTART;VALUE=DATE-TIME:20130419T190000
+DTEND;VALUE=DATE-TIME:20130419T120000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=69
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_67_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Insomni'Hack 2013
+DESCRIPTION:\n 	https://fixme.ch/wiki/InsomniHack-2013
+CATEGORIES:Workshop
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20130322T180000
+DTSTART;VALUE=DATE-TIME:20130322T180000
+DTEND;VALUE=DATE-TIME:20130323T010000
+LOCATION:Palexpo\n Geneva\, GE\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=67
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_65_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Cours Android #2
+DESCRIPTION:\n 	https://fixme.ch/wiki/CoursAndroid2
+CATEGORIES:Workshop
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20130314T190000
+DTSTART;VALUE=DATE-TIME:20130314T190000
+DTEND;VALUE=DATE-TIME:20130314T220000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=65
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_66_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Cours Django #1
+DESCRIPTION:\n 	First session of the web Pyhton framework: Dja
+ ngo.\n 	Focused on beginners.\n 	\n 	Content:\n 	*
+  About Django\n 	* Dev env setup\n 	* First projec
+ t\n 	* First app
+CATEGORIES:Workshop
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20130307T190000
+DTSTART;VALUE=DATE-TIME:20130307T190000
+DTEND;VALUE=DATE-TIME:20130307T190000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=66
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_62_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Raspberry PI workshop
+DESCRIPTION:\n 	Please register on the framapad!\n 	http://fra
+ madate.org/l48jvifcabcadjhy\n 	https://fixme.ch/wi
+ ki/RaspberryPi1
+CATEGORIES:Workshop
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20130226T190000
+DTSTART;VALUE=DATE-TIME:20130226T190000
+DTEND;VALUE=DATE-TIME:20130226T230000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=62
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_63_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Coding Night #4
+DESCRIPTION:\n 	https://fixme.ch/wiki/CodingNight4
+CATEGORIES:Workshop
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20130209T120000
+DTSTART;VALUE=DATE-TIME:20130209T120000
+DTEND;VALUE=DATE-TIME:20130210T000000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=63
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_61_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:CTFriday: Insomni'Hack training
+DESCRIPTION:\n 	https://fixme.ch/wiki/InsomniHack-2013
+CATEGORIES:Meeting
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20130125T190000
+DTSTART;VALUE=DATE-TIME:20130125T190000
+DTEND;VALUE=DATE-TIME:20130125T230000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=61
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_64_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Workshop Addressable LED Strips
+DESCRIPTION:\n 	https://fixme.ch/wiki/Addressable_LED_strip
+CATEGORIES:Workshop
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20130121T190000
+DTSTART;VALUE=DATE-TIME:20130121T190000
+DTEND;VALUE=DATE-TIME:20130121T210000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=64
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_60_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:29C3
+DESCRIPTION:\n 	People may also gather at FIXME to share Club 
+ Mate and watch the streams.\n \n 	https://fixme.ch
+ /wiki/29C3
+CATEGORIES:Conference
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20121227T060000
+DTSTART;VALUE=DATE-TIME:20121227T060000
+DTEND;VALUE=DATE-TIME:20121230T180000
+LOCATION:St.Petersburger Straße 1\n CCH\n Hamburg\, 20355\
+ n Germany\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=60
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_59_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:PCB Etching
+DESCRIPTION:\n 	https://fixme.ch/wiki/PCB_Etching&nbsp\;
+CATEGORIES:Workshop
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20121213T190000
+DTSTART;VALUE=DATE-TIME:20121213T190000
+DTEND;VALUE=DATE-TIME:20121213T220000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=59
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_57_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Assemblée Générale 2012
+DESCRIPTION:\n 	http://fixme.ch/wiki/AG_2012_December
+CATEGORIES:Meeting
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20121211T190000
+DTSTART;VALUE=DATE-TIME:20121211T190000
+DTEND;VALUE=DATE-TIME:20121211T230000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=57
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_58_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:rwthCTF 2012
+DESCRIPTION:\n 	https://fixme.ch/wiki/CTF
+CATEGORIES:Workshop
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20121130T140000
+DTSTART;VALUE=DATE-TIME:20121130T140000
+DTEND;VALUE=DATE-TIME:20121201T020000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=58
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_56_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:ruCTFE 2012
+DESCRIPTION:\n 	https://fixme.ch/wiki/CTF
+CATEGORIES:Workshop
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20121124T160000
+DTSTART;VALUE=DATE-TIME:20121124T160000
+DTEND;VALUE=DATE-TIME:20121124T000000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=56
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_52_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Démocratie et technologie
+DESCRIPTION:\n 	&quot\;Internet\, stade final de la d&eacute\;
+ mocratie ?&quot\; &eacute\;tait le titre de la der
+ ni&egrave\;re&nbsp\;s&eacute\;ance des &quot\;XXVI
+ I Rencontres de P&eacute\;trarque&quot\; en 2012 (
+ s&eacute\;rie de conf&eacute\;rences&nbsp\;organis
+ &eacute\;es par le journal Le monde et la radio Fr
+ ance culture)\n \n 	Ce titre exprime bien les atte
+ ntes citoyennes de l&rsquo\;&#39\;utilisation&nbsp
+ \;d&#39\;&rsquo\;Internet par rapport &agrave\; la
+  d&eacute\;mocratie.&nbsp\;\n \n 	Est-ce que cette
+  &eacute\;volution sera &eacute\;quivalente &agrav
+ e\; celle apport&eacute\;e par l&#39\;e-commerce d
+ ans&nbsp\;la sph&egrave\;re &eacute\;conomique des
+  consommateurs et producteurs?&nbsp\;Quel impact p
+ rocure la technologie sur les changements d&eacute
+ \;mocratiques?\n \n 	Autant de questions de soci&e
+ acute\;t&eacute\; que nous tenterons d&#39\;aborde
+ r dans cette&nbsp\;s&eacute\;ance.
+CATEGORIES:Conference
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20121101T190000
+DTSTART;VALUE=DATE-TIME:20121101T190000
+DTEND;VALUE=DATE-TIME:20121101T210000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=52
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_55_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Projection d'un film et discussion sur l'e-waste
+DESCRIPTION:\n 	S&#39\;en suivra une&nbsp\;discussion&nbsp\;su
+ r&nbsp\;les initiatives &agrave\; mettre en place 
+ pour lutter contre le gaspillage\, en&nbsp\;passan
+ t par l&#39\;&eacute\;ducation [1]\, l&#39\;organi
+ sation d&#39\;ateliers de r&eacute\;paration ou&nb
+ sp\;autres projects.\n 	\n 	[1]&nbsp\;http://www.r
+ ecycling-guide.org.uk/rrr.html
+CATEGORIES:Conference
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20121030T200000
+DTSTART;VALUE=DATE-TIME:20121030T200000
+DTEND;VALUE=DATE-TIME:20121030T220000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=55
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_53_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Hack.lu CTF
+DESCRIPTION:\n 	http://2012.hack.lu/index.php/CaptureTheFlag\n
+  	https://fixme.ch/wiki/Hacking_challenges
+CATEGORIES:Workshop
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20121023T230000
+DTSTART;VALUE=DATE-TIME:20121023T230000
+DTEND;VALUE=DATE-TIME:20121025T230000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=53
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_51_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Présentation Arduino-Microcontroleur
+DESCRIPTION:\n 	- Arduino: points forts et points faibles\n 	-
+  Arduino\, Teensy\, Pinguino\, Pic32\, MSP450\, Ra
+ spberry: que choisir?\n 	-&nbsp\;Solutions pour le
+  d&eacute\;veloppement temps r&eacute\;el et l&#39
+ \;enseignement\n 	- Capteurs de distance faciles &
+ agrave\; mettre en oeuvre\n \n 	https://fixme.ch/w
+ iki/Presentation_Microcontroleur
+CATEGORIES:Conference
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20121011T190000
+DTSTART;VALUE=DATE-TIME:20121011T190000
+DTEND;VALUE=DATE-TIME:20121011T220000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=51
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_54_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Friends of WikiLeaks Meeting
+DESCRIPTION:\n 	As agenda\, I would like to propose two points
+ :\n \n 	&nbsp\;\n \n 	1. Introduce / get to know e
+ ach other\n \n 	2. Collect ideas on what we can do
+  locally to support WL. Some general ideas are&nbs
+ p\;here&nbsp\;in the WLFriends Manifesto and also&
+ nbsp\;here&nbsp\;on the WL page.\n \n 	&nbsp\;\n \
+ n 	http://fixme.ch/wiki/Wikileaks_meeting
+CATEGORIES:Meeting
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20121009T190000
+DTSTART;VALUE=DATE-TIME:20121009T190000
+DTEND;VALUE=DATE-TIME:20121009T220000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=54
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_50_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:CSAW CTF
+DESCRIPTION:\n 	CSAW:&nbsp\;https://csawctf.poly.edu/\n \n 	Mo
+ re information on other CTFs:&nbsp\;http://fixme.c
+ h/wiki/Hacking_challenges
+CATEGORIES:Workshop
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20120928T220000
+DTSTART;VALUE=DATE-TIME:20120928T220000
+DTEND;VALUE=DATE-TIME:20120930T220000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=50
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_46_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Short Talks: GIT and Haskell
+DESCRIPTION:\n 	GIT\n 	Introductory talk about git\, in apprx.
+  1.5 hrs.\n \n 	In the past I have seen people str
+ uggle with basic git concepts such as the stage an
+ d the commit-graph. Thus\, the talk will be a mix 
+ of practical instructions and theoretical concepts
+ \, culminating in the realisation\, that all git c
+ ommands are a graph operation on a commit-graph. I
+ f time permits I will show some lesser known easte
+ r-eggs such as how to define a 256 color palette s
+ cheme and using parameterisable shell-functions in
+  git aliases.\n \n 	Haskell\n 	TBD
+CATEGORIES:Conference
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20120926T190000
+DTSTART;VALUE=DATE-TIME:20120926T190000
+DTEND;VALUE=DATE-TIME:20120926T220000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=46
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_49_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Table ronde Culture #3
+DESCRIPTION:\n 	http://fixme.ch/wiki/Discussions_culture_3
+CATEGORIES:Workshop
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20120830T190000
+DTSTART;VALUE=DATE-TIME:20120830T190000
+DTEND;VALUE=DATE-TIME:20120830T220000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=49
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_48_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Cyberlympics CTF
+DESCRIPTION:\n 	http://fixme.ch/wiki/Hacking_challenges
+CATEGORIES:Workshop
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20120816T200000
+DTSTART;VALUE=DATE-TIME:20120816T200000
+DTEND;VALUE=DATE-TIME:20120816T120000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=48
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_47_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Cyberlympics CTF
+CATEGORIES:Workshop
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20120809T200000
+DTSTART;VALUE=DATE-TIME:20120809T200000
+DTEND;VALUE=DATE-TIME:20120809T230000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=47
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_44_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Table ronde Culture #2
+DESCRIPTION:\n 	Je propose d&#39\;orienter le d&eacute\;bat su
+ r un article sorti le 07.07.2012.\n 	Plus d&#39\;i
+ nformations sur le wiki.
+CATEGORIES:Conference
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20120727T190000
+DTSTART;VALUE=DATE-TIME:20120727T190000
+DTEND;VALUE=DATE-TIME:20120727T220000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=44
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_45_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Cours Android #1
+DESCRIPTION:\n 	Pour plus d&#39\;information voir&nbsp\;http:/
+ /fixme.ch/wiki/CoursAndroid1
+CATEGORIES:Workshop
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20120724T190000
+DTSTART;VALUE=DATE-TIME:20120724T190000
+DTEND;VALUE=DATE-TIME:20120724T220000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=45
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_40_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Coding Night #3
+DESCRIPTION:\n 	\n 		Create new\, beautiful and amazing things
+  in a single night\n 	\n 		Contribute to open sour
+ ce projects\n 	\n 		Learn new technologies on the 
+ fly\n 	\n 		Work in a group of minimum two people\
+ n \n \n 	https://fixme.ch/wiki/CodingNight3
+CATEGORIES:Workshop
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20120720T190000
+DTSTART;VALUE=DATE-TIME:20120720T190000
+DTEND;VALUE=DATE-TIME:20120721T060000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=40
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_43_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:RMLL 2012
+DESCRIPTION:\n 	FIXME participera aux RMLL\, voir le wiki.\n \
+ n 	Plus d&#39\;information sur http://2012.rmll.in
+ fo
+CATEGORIES:Conference
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20120707T090000
+DTSTART;VALUE=DATE-TIME:20120707T090000
+DTEND;VALUE=DATE-TIME:20120712T190000
+LOCATION:Bd du Pont-d'Arve 40\n UNI MAIL\n Geneva\, GE 1205
+ \n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=43
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_42_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Discussions Culture
+DESCRIPTION:\n 	Nous tenterons aussi de comprendre la logique 
+ derri&egrave\;re des trait&eacute\;s tels\n 	que A
+ CTA\, TPP et les autres mesures visant le t&eacute
+ \;l&eacute\;chargement sur Internet.\n 	Et pour fi
+ nir\, r&eacute\;flexions quant aux solutions perme
+ ttant tant une\n 	r&eacute\;mun&eacute\;ration des
+  artistes (et donc la survie de la culture) que la
+ \n 	distribution et l&#39\;acc&egrave\;s &agrave\;
+  la culture par toutes et tous.\n 	\n 	Christian W
+ icky\, artiste (Favez)\, membre de la direction de
+  SUISA et\n 	employ&eacute\; dans une soci&eacute\
+ ;t&eacute\; de promotion musicale (Irascible distr
+ ibution)\,\n 	ainsi que Michael Gabriele\, membre 
+ du groupe power-jazz ind&eacute\;pendant\n 	OUiZZZ
+ \, nous donneront leur point de vue et nous permet
+ trons d&#39\;avoir des\n 	exemples et explications
+  r&eacute\;elles quant au syst&egrave\;me mis en p
+ lace.
+CATEGORIES:Conference
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20120628T190000
+DTSTART;VALUE=DATE-TIME:20120628T190000
+DTEND;VALUE=DATE-TIME:20120628T230000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=42
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_41_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:DQUOTEVive la ResistanceDQUOTE workshop and biohac
+ king discussion
+DESCRIPTION:\n 	&nbsp\;\n \n 	La Soci&eacute\;t&eacute\; Suiss
+ e d&#39\;Art Mechatronique et hackteria vous invit
+ ent &agrave\; un&nbsp\;workshop &quot\;Vive la Res
+ istance&quot\; ainsi qu&#39\;&agrave\; des discuss
+ ion autour du&nbsp\;biohacking.\n 	\n 	Le but de c
+ e workshop est de construire un circuit simple con
+ tenant un&nbsp\;oscillateur et un capteur r&eacute
+ \;sistif de gaz\, fait maison avec de la suie&nbsp
+ \;(des nanoparticules de carbone). A la sortie du 
+ d&eacute\;t&eacute\;cteur peuvent par&nbsp\;exempl
+ e &ecirc\;tre plac&eacute\;s des LEDs clignotantes
+  ou un haut-parleur.\n 	Soufflez dessus\, puis buv
+ ez de l&#39\;alcool et souflez dessus &agrave\; no
+ uveau\,&nbsp\;enfin &eacute\;couter le chant de la
+  r&eacute\;sistance \;)\n 	\n 	----------\n 	\n 	S
+ wiss Mechatronic Art Society (SGMK) and hackteria 
+ invite you to a&nbsp\;&quot\;Vive la Resistance&qu
+ ot\; make-away and a biohacking discussion.\n \n 	
+ &nbsp\;\n \n 	In this expanded workshop we will bu
+ ild a simple circuit that has an oscillator and a 
+ resistive gas sensor self-made out of soot aka saj
+ e (carbon nanoparticles). The output can be both a
+  blinking LED and also a speaker that produces sou
+ nds.\n \n 	Breath on it\, drink some alcohol and b
+ reath on it again\, and listen to the resistance s
+ ing!\n \n 	&nbsp\;\n \n 	----------\n \n 	&nbsp\;\
+ n \n 	\n 		http://wiki.sgmk-ssam.ch/index.php/Vive
+ _la_Resistance_aka_NanoSmano_Sajica\n 	\n 		http:/
+ /www.mechatronicart.ch\n 	\n 		http://hackteria.or
+ g\n \n \n 	&nbsp\;\n \n 	
+CATEGORIES:Workshop
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20120620T190000
+DTSTART;VALUE=DATE-TIME:20120620T190000
+DTEND;VALUE=DATE-TIME:20120620T120000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=41
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_38_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Defcon qualifications CTF
+CATEGORIES:Workshop
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20120602T040000
+DTSTART;VALUE=DATE-TIME:20120602T040000
+DTEND;VALUE=DATE-TIME:20120603T210000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=38
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_39_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Short Talks
+DESCRIPTION:\n 	Wednesday\, May 30th\, takes place the second 
+ Short Talks event. It&#39\;ll start around 20h00.\
+ n \n 	&nbsp\;\n \n 	Here is the program:\n \n 	\n 
+ 		Evenja\, by Fabian\n 	\n 		GIT crash course\n 	\
+ n 		TBD: Your talk here ?\n \n \n 	Do not hesitate
+  to come over\, it&#39\;s a free event !
+CATEGORIES:Conference
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20120530T200000
+DTSTART;VALUE=DATE-TIME:20120530T200000
+DTEND;VALUE=DATE-TIME:20120530T210000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=39
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_34_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Monthly hacking challenges
+DESCRIPTION:\n 	https://fixme.ch/wiki/Hacking_challenges
+CATEGORIES:Meeting
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20120525T190000
+DTSTART;VALUE=DATE-TIME:20120525T190000
+DTEND;VALUE=DATE-TIME:20120525T120000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=34
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_37_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Workshop IPv6
+DESCRIPTION:\n 	&nbsp\;\n \n 	Le 6 juin 2012\, la plupart des 
+ grandes infrastructures r&eacute\;seaux connect&ea
+ cute\;es &agrave\; Internet vont activer le protoc
+ ole IPv6. Le Gull a d&eacute\;cid&eacute\; de part
+ iciper &agrave\; ce lancement en adaptant sa propr
+ e infrastructure technique.\n \n 	Site officiel du
+  lancement :&nbsp\;http://www.worldipv6launch.org/
+ \n \n 	A cet effet\, un workshop est organis&eacut
+ e\; afin de pr&eacute\;parer cette migration sur n
+ os diff&eacute\;rents services. Toutes les personn
+ es souhaitant participer sont les bienvenues.
+CATEGORIES:Workshop
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20120522T193000
+DTSTART;VALUE=DATE-TIME:20120522T193000
+DTEND;VALUE=DATE-TIME:20120522T230000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=37
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_35_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Electronics evening
+CATEGORIES:Meeting
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20120429T190000
+DTSTART;VALUE=DATE-TIME:20120429T190000
+DTEND;VALUE=DATE-TIME:20120429T230000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=35
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_36_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Geekerie de printemps
+DESCRIPTION:\n 	http://swisslinux.org/wiki/fr/association/even
+ ements/20120414
+CATEGORIES:Meeting
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20120414T110000
+DTSTART;VALUE=DATE-TIME:20120414T110000
+DTEND;VALUE=DATE-TIME:20120414T170000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=36
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_33_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Table ronde ACTA
+DESCRIPTION:\n 	https://fixme.ch/wiki/Table_Ronde_ACTA
+CATEGORIES:Conference
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20120322T193000
+DTSTART;VALUE=DATE-TIME:20120322T193000
+DTEND;VALUE=DATE-TIME:20120322T220000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=33
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_32_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Coding Night #2
+DESCRIPTION:\n 	\n 		- Create new\, beautiful and amazing thin
+ gs in a single night\n 	\n 		- Contribute to open 
+ source projects\n 	\n 		- Learn new technologies o
+ n the fly\n 	\n 		- Work in a group of minimum two
+  people\n \n \n 	https://fixme.ch/wiki/CodingNight
+ 2
+CATEGORIES:Workshop
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20120316T180000
+DTSTART;VALUE=DATE-TIME:20120316T180000
+DTEND;VALUE=DATE-TIME:20120317T060000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=32
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_29_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Cours Hackerspaces
+DESCRIPTION:\n 	http://www.linux-gull.ch/GestionActiviteDocume
+ ntHackerspaces20120306.html
+CATEGORIES:Conference
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20120306T193000
+DTSTART;VALUE=DATE-TIME:20120306T193000
+DTEND;VALUE=DATE-TIME:20120306T220000
+LOCATION:av. Vertou 2\n Beausobre\n Morges\, 1110\n Switzer
+ land\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=29
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_25_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Insomni'Hack
+DESCRIPTION:\n 	https://fixme.ch/wiki/Insomni_Hack\n \n 	
+CATEGORIES:Meeting
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20120302T180000
+DTSTART;VALUE=DATE-TIME:20120302T180000
+DTEND;VALUE=DATE-TIME:20120302T000000
+LOCATION:Rue de la Prairie 4\n HEPIA\n Geneva\, GE 1202\n S
+ witzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=25
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_30_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Monthly hacking challenges
+CATEGORIES:Meeting
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20120224T180000
+DTSTART;VALUE=DATE-TIME:20120224T180000
+DTEND;VALUE=DATE-TIME:20120225T020000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=30
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_27_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:DQUOTEJ'ai pas de TUN et je m'en TAPDQUOTE
+DESCRIPTION:\n 	The use of VPNs is becoming more and more wide
+ spread among users who want to hide their traffic 
+ to ISPs. It makes a lot of sense when we see what 
+ is happening around the world with laws &agrave\; 
+ la Hadopi\, with censure or with government prosec
+ ution.\n \n 	The users tend to think they are secu
+ re because they use a VPN (&quot\;Strong\, secure 
+ and anonymous&quot\; as the marketing propaganda s
+ ays)\, but the reality is totally different: they 
+ actually drastically increase the likelihood of be
+ ing attacked.\n \n 	In this talk\, we will see the
+  privacy issues related to the use of misconfigure
+ d VPNs and the implication it can have on a user u
+ sing the service.\n \n 	The presentation will not 
+ be too technical\, although a basic understanding 
+ of network architecture is preferable.\n \n 	https
+ ://fixme.ch/wiki/J%27ai_pas_de_TUN_et_je_m%27en_TA
+ P
+CATEGORIES:Conference
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20120223T204500
+DTSTART;VALUE=DATE-TIME:20120223T204500
+DTEND;VALUE=DATE-TIME:20120223T220000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=27
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_31_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Global Android DevCamp
+DESCRIPTION:\n 	More information on&nbsp\;http://android-dev-c
+ amp-2012.blogspot.com/
+CATEGORIES:Meeting
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20120217T200000
+DTSTART;VALUE=DATE-TIME:20120217T200000
+DTEND;VALUE=DATE-TIME:20120219T200000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=31
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_28_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Apéro avec les voisins
+CATEGORIES:Workshop
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20120215T200000
+DTSTART;VALUE=DATE-TIME:20120215T200000
+DTEND;VALUE=DATE-TIME:20120215T220000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=28
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_26_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Coding Night
+DESCRIPTION:\n 	https://fixme.ch/wiki/Coding_night
+CATEGORIES:Meeting
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20120210T180000
+DTSTART;VALUE=DATE-TIME:20120210T180000
+DTEND;VALUE=DATE-TIME:20120211T020000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=26
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_24_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:FOSDEM
+DESCRIPTION:\n 	http://fosdem.org/2012/
+CATEGORIES:Conference
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20120204T100000
+DTSTART;VALUE=DATE-TIME:20120204T100000
+DTEND;VALUE=DATE-TIME:20120205T170000
+LOCATION:ULB Campus Solbosh\n Avenue Franklin D. Roosevelt\
+ , 50\n Brussels\, BRU 1050\n Belgium\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=24
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_22_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Monthly hacking challenges
+DESCRIPTION:\n 	https://fixme.ch/wiki/CTF/gits2012
+CATEGORIES:Meeting
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20120127T200000
+DTSTART;VALUE=DATE-TIME:20120127T200000
+DTEND;VALUE=DATE-TIME:20120127T120000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=22
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_23_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Mozilla CTF
+DESCRIPTION:\n 	https://wiki.mozilla.org/Security/Events/CTF
+CATEGORIES:Meeting
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20120125T090000
+DTSTART;VALUE=DATE-TIME:20120125T090000
+DTEND;VALUE=DATE-TIME:20120125T235900
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=23
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_21_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:28C3
+DESCRIPTION:\n 	More information on the wiki.
+CATEGORIES:Meeting
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20111227T130000
+DTSTART;VALUE=DATE-TIME:20111227T130000
+DTEND;VALUE=DATE-TIME:20111230T130000
+LOCATION:bcc Berliner Congress Center\n Alexanderstr. 11\n 
+ Berlin\, 10178\n Germany\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=21
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_20_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Workshop Blender
+DESCRIPTION:\n 	Suite au cours donn&eacute\; mardi 6 d&eacute\
+ ;cembre pour le GULL\, FIXME propose un workshop B
+ lender 3D.\n \n 	Au programme:\n \n 	\n 		Pratique
+ \, pratique et pratique!\n 	\n 		R&eacute\;ponses 
+ &agrave\; toutes vos questions.\n \n \n 	\n 	Pr&ea
+ cute\;sent&eacute\; par&nbsp\;Olivier Amrein
+CATEGORIES:Workshop
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20111220T190000
+DTSTART;VALUE=DATE-TIME:20111220T190000
+DTEND;VALUE=DATE-TIME:20111220T230000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=20
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_19_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Assemblée Générale
+DESCRIPTION:\n 	Toutes les informations sur https://fixme.ch/w
+ iki/2011_Novembre
+CATEGORIES:Meeting
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20111130T200000
+DTSTART;VALUE=DATE-TIME:20111130T200000
+DTEND;VALUE=DATE-TIME:20111130T230000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=19
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_17_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Atelier fabrication de bougies
+DESCRIPTION:\n 	J&#39\;ai tout le mati&eacute\;riel pour faire
+  des bougies de diff&eacute\;rentes formes.\n \n 	
+ Donc vu que No&euml\;l aproche\, je me suis dit qu
+ e &ccedil\;a serait pas mal de faire un petit atel
+ ier bougie au Hackerspace.\n \n 	Si vous avez de v
+ ieilles bougies\, ou des moules h&eacute\;sitez pa
+ s :-)\n \n 	
+CATEGORIES:Workshop
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20111127T150000
+DTSTART;VALUE=DATE-TIME:20111127T150000
+DTEND;VALUE=DATE-TIME:20111127T193000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=17
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_18_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Monthly Wargames
+CATEGORIES:Meeting
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20111125T190000
+DTSTART;VALUE=DATE-TIME:20111125T190000
+DTEND;VALUE=DATE-TIME:20111125T230000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=18
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_16_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:rwthCTF 2011
+DESCRIPTION:\n 	http://ctf.itsec.rwth-aachen.de\n \n 	The rese
+ arch group IT-Security of the RWTH Aachen Universi
+ ty and the associated 0ldEur0pe CTF team are proud
+  to announce that they are organizing the first rw
+ thCTF to happen in fall 2011.\n 	\n 	The CTF start
+ s on Friday\, September 30th at 5pm (CEST) and end
+ s on Saturday\, October 1st 4am (Worldclock Event)
+ . Attendance is primarily for university teams\, b
+ ut we can make exceptions for verified other organ
+ isations or institutions. You will have to cope wi
+ th your own server image as well as a series of ch
+ allenges.
+CATEGORIES:Workshop
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20110930T130000
+DTSTART;VALUE=DATE-TIME:20110930T130000
+DTEND;VALUE=DATE-TIME:20111001T040000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=16
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_15_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Hack.lu CTF 2011
+DESCRIPTION:\n 	&nbsp\;\n \n 	http://2011.hack.lu/index.php/Ca
+ ptureTheFlag\n \n 	&nbsp\;\n \n 	Toutes les person
+ nes int&eacute\;ress&eacute\;es &agrave\; y partic
+ iper sont les bienvenues d&egrave\;s lundi 11h du 
+ matin!
+CATEGORIES:Workshop
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20110919T110000
+DTSTART;VALUE=DATE-TIME:20110919T110000
+DTEND;VALUE=DATE-TIME:20110921T110000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=15
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_14_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Electronics workshop for beginners
+DESCRIPTION:\n 	\n 		Measure temperature\n 	\n 		Use a buzzer\
+ n 	\n 		Blink LEDs\n 	\n 		Detect brightness\n 	\n
+  		...\n \n \n 	Components\n \n 	\n 		Sparkfun Sta
+ rter Kit for Arduino&nbsp\;http://www.sparkfun.com
+ /products/10174\n \n \n 	\n 	The kits will be orde
+ red by FIXME according to the number of subscriber
+ s.\n 	Grouping for buying kits is encouraged (2 pe
+ ople for 1 kit is perfect)\n \n 	&nbsp\;\n \n 	Sub
+ scription is mandatory! If you are curious and onl
+ y want to observe\, you are welcome to come over!
+CATEGORIES:Workshop
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20110907T200000
+DTSTART;VALUE=DATE-TIME:20110907T200000
+DTEND;VALUE=DATE-TIME:20110907T230000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=14
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_13_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Short Talks
+DESCRIPTION:\n 	&nbsp\;\n \n 	\n 		Differences and advantages 
+ of Emacs over Vim\n 	\n 		Android dev introduction
+ \n 	\n 		A suprise talk&nbsp\;\n 
+CATEGORIES:Conference
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20110711T200000
+DTSTART;VALUE=DATE-TIME:20110711T200000
+DTEND;VALUE=DATE-TIME:20110711T230000
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=13
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_11_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:CTF Defcon quals
+DESCRIPTION:\n 	Whole week-end hacking\, RE\, etc and l33tness
+ .\n \n 	http://www.ddtek.biz/\n \n 	Ask Marc for t
+ he fixme&#39\;s hash !
+CATEGORIES:Meeting
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20110603T180000
+DTSTART;VALUE=DATE-TIME:20110603T180000
+DTEND;VALUE=DATE-TIME:20110605T235900
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=11
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_10_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Soirée film
+DESCRIPTION:\n 	Projection d&#39\;un film libre de droit\, cho
+ isi le soir m&ecirc\;me.
+CATEGORIES:Movie
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20110527T200000
+DTSTART;VALUE=DATE-TIME:20110527T200000
+DTEND;VALUE=DATE-TIME:20110527T220000
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=10
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_12_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Assemblée Générale
+DESCRIPTION:\n 	Voici les liste des points &agrave\; discuter:
+ &nbsp\;\n \n 	\n 		Assurance\n 	Assurance ECA -&gt
+ \; possible sans bail&nbsp\;? R&eacute\;ponse: il 
+ faut faire une police d&#39\;assurance professione
+ l aupr&egrave\;s de l&#39\;ECA: . la rubrique C11 
+ du formulaire doit au moins &ecirc\;tre de 8&#39\;
+ 000.-\n 	\n 		RC personnelle valide dans nos locau
+ x&nbsp\;?\n 	\n 		Consultation avocat sur assuranc
+ es\n 	\n 		But: redefinir ou non les cotis\n 		\n 
+ 			\n 				Cotisation fix&eacute\;e au minimum &agr
+ ave\; 5chf/mois puis encourag&eacute\; &agrave\; p
+ ayer plus (genre 20chf/mois)\n 			\n 				Diff&eacu
+ te\;rents pricing fixes (&eacute\;tudiant/supporte
+ r/enthousiast/...)\n 		\n 	\n 	\n 		Etat des compt
+ es\n 	\n 		Cr&eacute\;ation du r&eacute\;glement i
+ nterne\n 	\n 		Election d&#39\;un nouveau secretai
+ re\n 	\n 		Organisation des projets (perso/globaux
+ )\n 
+CATEGORIES:Meeting
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20110523T193000
+DTSTART;VALUE=DATE-TIME:20110523T193000
+DTEND;VALUE=DATE-TIME:20110523T220000
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=12
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_8_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Reverse engineering 101
+DESCRIPTION:\n 	&nbsp\;\n \n 	\n 		Base d&#39\;assembleur (&ag
+ rave\; lire avant le cours: http://en.wikipedia.or
+ g/wiki/X86_assembly_language)\n 	\n 		D&eacute\;bu
+ ter avec IDA (version d&eacute\;mo: http://www.hex
+ -rays.com)\n 	\n 		Debugging windows\n 	\n 		Remot
+ e debugging gdb\n \n \n 	&nbsp\;
+CATEGORIES:Workshop
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20110426T193000
+DTSTART;VALUE=DATE-TIME:20110426T193000
+DTEND;VALUE=DATE-TIME:20110426T232800
+LOCATION:Association FIXME\n Rue de Genève 79\n Lausanne\,
+  VD\n Switzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=8
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_7_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:[Association FIXME] Inauguration du nouveau local
+DESCRIPTION:\n 	L&#39\;occasion de se rencontrer\, de boire un
+  verre et bien &eacute\;videmment de d&eacute\;mar
+ rer des projets ensemble.\n 	Rendez-vous directeme
+ nt &agrave\; la Route de Gen&egrave\;ve 79 &agrave
+ \; Lausanne. Sonnette &quot\;Thermibel&quot\; et n
+ ous viendront vous ouvrir!\n \n 	Acc&egrave\;s:\n 
+ 	Carte OSM:&nbsp\;http://tinyurl.com/fixme-acces\n
+  \n 	\n 		- Avec le bus 18 direction Crissier &agr
+ ave\; partir du Flon\, arr&ecirc\;t Couchirard\n 	
+ \n 		- Avec le m&eacute\;tro M1 arr&ecirc\;t Monte
+ lly\, puis environ 10mn &agrave\; pied\n 	\n 		- E
+ n voiture\, parking en zone blanche devant (ou ble
+ ue avec de la chance)\n \n \n 	Pour des questions 
+ d&#39\;organisation\, merci d&#39\;annoncer votre 
+ pr&eacute\;sence en cliquant sur le bouton &quot\;
+ Inscription&quot\; ci-dessous.
+CATEGORIES:Meeting
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20110414T180000
+DTSTART;VALUE=DATE-TIME:20110414T180000
+DTEND;VALUE=DATE-TIME:20110415T000000
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=7
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_5_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Insomni'Hack 2011
+DESCRIPTION:&nbsp\;\n Le 4 mars 2011 aura lieu la 4&egrave\;me
+  &eacute\;dition Insomni&rsquo\;hack organis&eacut
+ e\;e &agrave\; l&rsquo\;HEPIA\, haute &eacute\;col
+ e du paysage d&rsquo\;ing&eacute\;nierie et d&rsqu
+ o\;architecture de Gen&egrave\;ve.\n Cette ann&eac
+ ute\;e\, une conf&eacute\;rence sera donn&eacute\;
+ e en premi&egrave\;re partie de journ&eacute\;e\, 
+ et ensuite les participants se confronteront aux &
+ eacute\;preuves &agrave\; partir de 18h et ceci ju
+ squ&rsquo\;&agrave\; environ 1 heure du matin. Le 
+ concours s&rsquo\;adresse &agrave\; tout type de h
+ ackers\, allant du novice &agrave\; l&rsquo\;exper
+ t et est totalement gratuit.\n Cette ann&eacute\;e
+ \, une conf&eacute\;rence sera donn&eacute\;e en p
+ remi&egrave\;re partie de journ&eacute\;e\, et ens
+ uite les participants se confronteront aux &eacute
+ \;preuves &agrave\; partir de 18h et ceci jusqu&rs
+ quo\;&agrave\; environ 1 heure du matin. Le concou
+ rs s&rsquo\;adresse &agrave\; tout type de hackers
+ \, allant du novice &agrave\; l&rsquo\;expert et e
+ st totalement gratuit.\n &nbsp\;
+CATEGORIES:Meeting
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20110304T180000
+DTSTART;VALUE=DATE-TIME:20110304T180000
+DTEND;VALUE=DATE-TIME:20110304T000000
+LOCATION:Rue de la Prairie 4\n HEPIA\n Geneva\, GE 1202\n S
+ witzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=5
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_6_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Balade-Cours photo
+DESCRIPTION:&nbsp\;\n Cours de photo sur le mode balade.\n On 
+ regardera :\n - Ouverture/Vitesse\n - Exposition\n
+  - Correction\n Le lieu de d&eacute\;part sera &ag
+ rave\; Chauderon devant la BCV\n il faut un reflex
+  un compact avanc&eacute\;.\n On regardera :\n \n 
+ - Ouverture/Vitesse\n - Exposition\n - Correction\
+ n \n Le lieu de d&eacute\;part sera &agrave\; Chau
+ deron devant la BCVIl faut un reflex un compact av
+ anc&eacute\;.\n &nbsp\;
+CATEGORIES:Meeting
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20110220T130000
+DTSTART;VALUE=DATE-TIME:20110220T130000
+DTEND;VALUE=DATE-TIME:20110220T170000
+LOCATION:Place Chauderon\n Lausanne\, VD 1003\n Switzerland
+ \n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=6
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_4_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Introduction to open-source 3D animation with Blen
+ der
+DESCRIPTION:Topics covered :&nbsp\;\n - Blender background and
+  history.\n - The steps to create a 3d animation.\
+ n - The blender fondation's projects and open-movi
+ es\n - Hands on modelling a 3D scene.\n Please not
+ e it is not possible to learn the software in one 
+ evening\, but it will hopefully give you a nice ov
+ erview of the tool and possibilities.
+CATEGORIES:Workshop
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20110119T200000
+DTSTART;VALUE=DATE-TIME:20110119T200000
+DTEND;VALUE=DATE-TIME:20110119T221700
+LOCATION:Rue du Valentin 32\n netexpert\n Lausanne\, \n Swi
+ tzerland\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=4
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_3_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:27C3
+DESCRIPTION:27th Chaos Communication CongressDecember 27th to 
+ 30th\, 2010bcc Berliner Congress Center\, Berlin\,
+  Germany\n The Congress offers&nbsp\;lectures&nbsp
+ \;and&nbsp\;workshops&nbsp\;on a multitude of topi
+ cs and attracts a diverse audience of thousands of
+  hackers\, scientists\, artists\, and utopians fro
+ m all around the world. The 27C3's slogan is&nbsp\
+ ;&ldquo\;We come in peace&rdquo\;.\n For 27 years\
+ , the congress is organized by the community and a
+ ppreciates&nbsp\;all kind of participation. You ar
+ e encouraged to contribute by&nbsp\;volunteering\,
+  setting up and attending&nbsp\;hands-on events&nb
+ sp\;or presenting&nbsp\;your own projects&nbsp\;to
+  fellow hackers.\n Some basic&nbsp\;survival guide
+ lines&nbsp\;might come in handy for everything not
+  answered in our&nbsp\;27C3 FAQ. Like last year we
+  search for helpers in our distributed congress pr
+ ogram\, the&nbsp\;Peace Missions. Updated informat
+ ion are covered by the&nbsp\;CCC Events Blog&nbsp\
+ ;or via&nbsp\;Twitter (@27C3).\n Here you find a o
+ verview of the areas\, activities and some project
+ s at 27C3. As this website is part of a wiki you c
+ an contribute information\, too.&nbsp\;Login or re
+ gister an account&nbsp\;and go ahead. Refer to thi
+ shelp page&nbsp\;for information about using a Med
+ iaWiki.\n &nbsp\;\n http://events.ccc.de/congress/
+ 2010/wiki/Main_Page
+CATEGORIES:Conference
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20101227T000000
+DTSTART;VALUE=DATE-TIME:20101227T000000
+DTEND;VALUE=DATE-TIME:20101231T000000
+LOCATION:bcc Berliner Congress Center\n Berlin\, BR\n Germa
+ ny\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=3
+END:VEVENT
+BEGIN:VEVENT
+UID:CiviCRM_EventID_1_ee7d8b5ece7e7765d1ffc1966505167c@fixme.ch
+SUMMARY:Pinhole DIY
+DESCRIPTION:From Wikipedia:\n A&nbsp\;pinhole camera&nbsp\;is 
+ a simple&nbsp\;camera&nbsp\;without a&nbsp\;lens&n
+ bsp\;and with a single small&nbsp\;aperture&nbsp\;
+ &mdash\; effectively a light-proof box with a smal
+ l hole in one side. Light from a scene passes thro
+ ugh this single point and projects an inverted ima
+ ge on the opposite side of the box. The human eye 
+ in bright light acts similarly\, as do cameras usi
+ ng small apertures.\n http://en.wikipedia.org/wiki
+ /Pinhole_camera\n \n Please subscribe using the Re
+ gister button below.\n INFO: Financial participati
+ on will be needed for the equipment (light-sensiti
+ ve paper\, painting)\, something like 10-20 CHF.
+CATEGORIES:Workshop
+CALSCALE:GREGORIAN
+DTSTAMP;VALUE=DATE-TIME:20101201T190000
+DTSTART;VALUE=DATE-TIME:20101201T190000
+DTEND;VALUE=DATE-TIME:20101201T210000
+LOCATION:Rue du Valentin 34 et demi\n Lausanne\, \n Switzer
+ land\n 
+URL:https://fixme.ch/civicrm/event/info?reset=1&id=1
+END:VEVENT
+END:VCALENDAR

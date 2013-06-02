@@ -3,6 +3,7 @@
 
 import cgitb, json, MySQLdb, sys, time
 from datetime import datetime
+import vobject
 from pprint import pprint
 
 cgitb.enable()
@@ -40,17 +41,29 @@ api = {
   'duration': 0, # Custom field for the open duration
   'status':   '',
   'lastchange': 0,
-  'events':   [{
-      'name': 'https://fixme.ch/civicrm/event/past?html=1&start=20101201&order=1&reset=1',
-      'type': 'url',
-      't' : 0,
-  }],
+  'events':   [],
   'feeds':    [
                 {'name': 'site', 'type': 'application/rss+xml', 'url': 'https://fixme.ch/rss.xml'},
                 {'name': 'wiki', 'type': 'application/rss+xml', 'url': 'https://fixme.ch/w/index.php?title=Special:RecentChanges&feed=atom'},
                 {'name': 'calendar', 'type': 'text/calendar','url': 'https://www.google.com/calendar/ical/sruulkb8vh28dim9bcth8emdm4%40group.calendar.google.com/public/basic.ics'},
               ],
 }
+
+#
+# Get last 10 events
+#
+try:
+    ical = vobject.readOne(open('./civicrm_ical.ics', 'r').read())
+    for e in ical.vevent_list[:10]:
+        ts = int(time.mktime(e.dtstart.value.timetuple()))
+        api['events'].append({
+            'name': e.summary.value,
+            'type': e.categories.value[0],
+            'timestamp': ts,
+            't':    ts,
+        })
+except IOError,e:
+    print e
 
 #
 # Get Open/Close status
