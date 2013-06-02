@@ -40,7 +40,11 @@ api = {
   'duration': 0, # Custom field for the open duration
   'status':   '',
   'lastchange': 0,
-  'events':   ['https://fixme.ch/civicrm/event/past?html=1&start=20101201&order=1&reset=1'],
+  'events':   [{
+      'name': 'https://fixme.ch/civicrm/event/past?html=1&start=20101201&order=1&reset=1',
+      'type': 'url',
+      't' : 0,
+  }],
   'feeds':    [
                 {'name': 'site', 'type': 'application/rss+xml', 'url': 'https://fixme.ch/rss.xml'},
                 {'name': 'wiki', 'type': 'application/rss+xml', 'url': 'https://fixme.ch/w/index.php?title=Special:RecentChanges&feed=atom'},
