@@ -25,6 +25,7 @@ api = {
               },
   'url':      'https://fixme.ch',
   'address':  'Rue de Genève 79, 1004 Lausanne, Switzerland',
+  'issue-report-channels': ['email'],
   'contact':  {
                 'phone':      '+41216220734',
                 'keymaster':  ['+41797440880'],
@@ -37,9 +38,15 @@ api = {
               },
   'lon':      6.613828,
   'lat':      46.524652,
+  'location': {
+                'lon':  6.613828,
+                'lat':  46.524652,
+                'address':  'Rue de Genève 79, 1004 Lausanne, Switzerland',
+              },
   'open':     False,
   'duration': 0, # Custom field for the open duration
   'status':   '',
+  'state':    '',
   'lastchange': 0,
   'events':   [],
   'feeds':    [
@@ -89,6 +96,9 @@ else:
 #
 # Update API
 #
+api['state'] = {
+    'open': bool(res_open),
+}
 api['lastchange'] = time.mktime(res_date.timetuple());
 api['open'] = bool(res_open)
 api['duration'] = int(res_duration)
