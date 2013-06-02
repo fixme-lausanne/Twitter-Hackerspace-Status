@@ -6,10 +6,10 @@ The schema can be found in `hackerspace_status.sql`.
 
 Spaceapi.py
 -----------
-Implements the Space API from [hackerspaces.nl](https://hackerspaces.nl/spaceapi/).
-Needs python-mysqldb
-
-- Add `duration` field, the number of hour(s) the space will be open from `lastchange`
+Implements the [Space API](http://spaceapi.net).
+- Needs python-mysqldb and python-vobject
+- Adds `duration` field, the number of hour(s) the space will be open from `lastchange`
+- Downloads the events in ical format in a cron
 
 Twitter.pl
 ----------
