@@ -31,7 +31,8 @@ if($ip !~ /^62\.220\.13\d\.\d{1,3}/ && $ip !~ /^2001:788:dead:beef/) {
 
 # Twitter OAuth
 my $client = Net::Twitter->new(
-  traits          => [qw/OAuth API::REST/],
+  #traits          => [qw/OAuth API::REST/],
+  traits          => [qw/API::RESTv1_1/],
   consumer_key    => "",
   consumer_secret => "",
   access_token    => "",
@@ -84,7 +85,12 @@ if(param("do")) {
 if($client->authorized){
   print "updating status ... <br/>\n";
   my $ret = $client->update({status => $status});
-  print $status;
+  if ($ret == undef){
+    print $client->get_error();
+  }
+  else {
+    print $status;
+  }
 }else{
   print "Client is not authorized anymore!";
 }
