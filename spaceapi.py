@@ -54,8 +54,10 @@ api = {
                 {'name': 'wiki', 'type': 'application/rss+xml', 'url': 'https://fixme.ch/w/index.php?title=Special:RecentChanges&feed=atom'},
                 {'name': 'calendar', 'type': 'text/calendar','url': 'https://www.google.com/calendar/ical/sruulkb8vh28dim9bcth8emdm4%40group.calendar.google.com/public/basic.ics'},
               ],
-  'cam':      ['http://62.220.135.248:8081/stream.mjpg'],
-  'stream':   {'mjpeg': 'http://62.220.135.248:8081/stream.mjpg'},
+  'stream':   {
+                'mjpeg': 'http://webcam.fixme.ch/mjpg/video.mjpg',
+                'html': 'http://webcam.fixme.ch/view/index.shtml',
+              },
 }
 
 #
