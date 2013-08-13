@@ -16,7 +16,7 @@ print
 # Default description of the Space API
 #
 api = {
-  'api':      '0.12',
+  'api':      '0.13',
   'space':    'FIXME',
   'logo':     'https://fixme.ch/sites/default/files/Logo5_v3-mini.png',
   'icon':     {
@@ -25,7 +25,6 @@ api = {
               },
   'url':      'https://fixme.ch',
   'address':  'Rue de Genève 79, 1004 Lausanne, Switzerland',
-  'issue-report-channels': ['email'],
   'contact':  {
                 'phone':      '+41216220734',
                 'keymaster':  ['+41797440880'],
@@ -49,15 +48,16 @@ api = {
   'state':    '',
   'lastchange': 0,
   'events':   [],
-  'feeds':    [
-                {'name': 'site', 'type': 'application/rss+xml', 'url': 'https://fixme.ch/rss.xml'},
-                {'name': 'wiki', 'type': 'application/rss+xml', 'url': 'https://fixme.ch/w/index.php?title=Special:RecentChanges&feed=atom'},
-                {'name': 'calendar', 'type': 'text/calendar','url': 'https://www.google.com/calendar/ical/sruulkb8vh28dim9bcth8emdm4%40group.calendar.google.com/public/basic.ics'},
-              ],
+  'feeds':    {
+                'blog': {'type': 'rss', 'url': 'https://fixme.ch/rss.xml'},
+                'wiki': {'type': 'rss', 'url': 'https://fixme.ch/w/index.php?title=Special:RecentChanges&feed=atom'},
+                'calendar': {'type': 'ical','url': 'https://www.google.com/calendar/ical/sruulkb8vh28dim9bcth8emdm4%40group.calendar.google.com/public/basic.ics'},
+              },
   'stream':   {
                 'mjpeg': 'http://62.220.135.212/mjpg/video.mjpg',
                 'html': 'http://webcam.fixme.ch',
               },
+  'issue_report_channels': ['email', 'twitter'],
 }
 
 #
