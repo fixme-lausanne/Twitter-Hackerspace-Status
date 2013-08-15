@@ -19,12 +19,7 @@ api = {
   'api':      '0.13',
   'space':    'FIXME',
   'logo':     'https://fixme.ch/sites/default/files/Logo5_v3-mini.png',
-  'icon':     {
-                'open': 'https://fixme.ch/sites/default/files/logo-open.png',
-                'closed': 'https://fixme.ch/sites/default/files/logo-closed.png',
-              },
   'url':      'https://fixme.ch',
-  'address':  'Rue de Genève 79, 1004 Lausanne, Switzerland',
   'contact':  {
                 'phone':      '+41216220734',
                 'keymaster':  ['+41797440880'],
@@ -35,19 +30,18 @@ api = {
                 'facebook':   'https://www.facebook.com/fixmehackerspace',
                 'wiki':       'https://wiki.fixme.ch',
               },
-  'lon':      6.613828,
-  'lat':      46.524652,
   'location': {
                 'lon':  6.613828,
                 'lat':  46.524652,
                 'address':  'Rue de Genève 79, 1004 Lausanne, Switzerland',
               },
-  'open':     False,
-  'duration': 0, # Custom field for the open duration
-  'ext_duration': 0, # Custom field for the open duration
-  'status':   '',
-  'state':    '',
-  'lastchange': 0,
+  'state':    {
+                'icon':     {
+                  'open': 'https://fixme.ch/sites/default/files/logo-open.png',
+                  'closed': 'https://fixme.ch/sites/default/files/logo-closed.png',
+                },
+                'ext_duration': 0, # Custom field for the open duration
+              },
   'events':   [],
   'feeds':    {
                 'blog': {'type': 'rss', 'url': 'https://fixme.ch/rss.xml'},
@@ -90,9 +84,9 @@ except Exception,e:
     result = None
 
 if result != None and len(result) == 3:
-  res_date = result[0]
-  res_duration = result[1]
-  res_open = result[2]
+    res_date = result[0]
+    res_duration = result[1]
+    res_open = result[2]
 else:
     res_date = datetime.now()
     res_duration = 0
@@ -101,20 +95,17 @@ else:
 #
 # Update API
 #
-api['state'] = {
-    'open': bool(res_open),
-}
-api['lastchange'] = time.mktime(res_date.timetuple());
-api['open'] = bool(res_open)
+api['state']['open'] = bool(res_open)
+api['state']['lastchange'] = time.mktime(res_date.timetuple())
 api['duration'] = int(res_duration)
 api['ext_duration'] = int(res_duration)
 diff = datetime.now() - res_date
 if res_open == True and diff.seconds / 3600 >= res_duration:
-  api['status'] = 'The space may be closed, the initial duration of %i hour(s) is exceeded.'  % res_duration
+    api['state']['message'] = 'The space may be closed, the initial duration of %i hour(s) is exceeded.'  % res_duration
 elif res_open == True:
-  api['status'] = 'The space is open.'
+    api['state']['message'] = 'The space is open.'
 else:
-  api['status'] = 'The space is closed.'
+    api['state']['message'] = 'The space is closed.'
 
 #
 # Pretty print JSON
