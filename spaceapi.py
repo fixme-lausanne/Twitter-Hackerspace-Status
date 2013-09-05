@@ -53,7 +53,39 @@ api = {
                 'html': 'http://webcam.fixme.ch',
               },
   'issue_report_channels': ['email', 'twitter'],
+  'sensors': {
+                'people_now_present': [{
+                  'value':        0,
+                  'location':     'FIXME Network',
+                  'description':  'Number of devices on the network excluding some fixed machines, all android phones, etc', 
+                }],
+                'total_member_count': [
+                  {
+                    'value': 19, #05.09.2013
+                    'name': 'premium members',
+                    'location': 'member management tool',
+                    'description': 'number of active members on the 5th, september 2013',
+                  },
+                  {
+                    'value': 51, #05.09.2013
+                    'name': 'standard members',
+                    'location': 'member management tool',
+                    'description': 'number of ordinary members on the 5th, september 2013',
+                  },
+                ],
+             }
 }
+
+#
+# Get sensors data
+#
+try:
+    user_online = open('/var/log/user_online.log', 'r').read()
+except:
+    user_online = 0
+    pass
+if user_online != '' and int(user_online) > 0:
+    api['sensors']['people_now_present'][0]['value'] = user_online
 
 #
 # Get last 10 events
