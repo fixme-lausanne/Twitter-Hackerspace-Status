@@ -91,16 +91,16 @@ function hackerspace_status_block($op='list', $delta=0, $edit=array()) {
 			$block[$i]["cache"] = BLOCK_NO_CACHE;
 		}
 	} else if ($op == 'view') {
-    	if (variable_get($moduleName.'_show_title', '1')==true) 
+    	if (variable_get($moduleName.'_show_title', '1')==true)
 			$block['subject'] = ucfirst($moduleName);
-		
+
 		// Get status from API
 		$url = "https://fixme.ch/cgi-bin/spaceapi.py";
 		$result = json_decode(file_get_contents($url));
 
-		$status = ($result->open == 1 ? "open" : "closed");
-		$from = $result->lastchange;
-		$hours = $result->duration;
+		$status = ($result->state->open == 1 ? "open" : "closed");
+		$from = $result->state->lastchange;
+		$hours = $result->state->ext_duration;
 		$text1 = "";
 		$text2 = "";
 
