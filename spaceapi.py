@@ -127,8 +127,7 @@ else:
 #
 api['state']['open'] = bool(res_open)
 api['state']['lastchange'] = time.mktime(res_date.timetuple())
-api['duration'] = int(res_duration)
-api['ext_duration'] = int(res_duration)
+api['state']['ext_duration'] = int(res_duration)
 diff = datetime.now() - res_date
 if res_open == True and diff.seconds / 3600 >= res_duration:
     api['state']['message'] = 'The space may be closed, the initial duration of %i hour(s) is exceeded.'  % res_duration
