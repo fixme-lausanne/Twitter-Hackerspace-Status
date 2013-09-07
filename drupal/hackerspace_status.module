@@ -1,0 +1,115 @@
+<?php
+// $Id:  Hackerspace Status $
+
+// keep the module name consistent throughout
+global $moduleName;
+$moduleName = "hackerspace_status";
+
+
+// Additional functions
+function set_status_message(&$status, &$text1, &$text2, $from, $hours = 0) {
+	//$format = 'Y-m-d\TH:i:s';
+	//$date_from = DateTime::createFromFormat($format, $from);
+  $date_from = new DateTime();
+  $date_from->setTimestamp($from);
+
+	if ($status == "open") {
+		$date = new DateTime("now");
+		$diff = $date->diff($date_from)->format("%a") * 24 * 60 
+				+ $date->diff($date_from)->format("%h") * 60 
+				+ $date->diff($date_from)->format("%i");
+		
+		if ($date > $date_from && $diff > $hours*60) {
+			$text1 = "Supposed to be closed ";
+			$text2 = "since ". $date_from->add(new DateInterval('PT'. $hours .'H'))->format("d.m.Y H:i");
+			$status = "";
+		} else {
+			$text1 = "Open for ". ($hours > 0 ? $hours ."h" : "");
+			$text2 = "since ". $date_from->format("d.m.Y H:i");
+		}
+	} else if ($status == "closed") {
+		$text1 = "Closed";
+		$text2 = "since ". $date_from->format("d.m.Y H:i");
+	} else {
+		$text1 = "unknown";
+		$text2 = "status system is down?";
+	}
+}
+
+function imagettftextoutline(&$im, $size, $angle, $x, $y, &$col, &$outlinecol, $fontfile, $text, $width) {
+	// For every X pixel to the left and the right
+	for ($xc = $x - abs($width); $xc <= $x + abs($width); $xc++) {
+	    // For every Y pixel to the top and the bottom
+	    for ($yc = $y - abs($width); $yc <= $y + abs($width); $yc++) {
+	        // Draw the text in the outline color
+	        $txt1 = imagettftext($im, $size, $angle, $xc, $yc, $outlinecol, $fontfile, $text);
+	    }
+	}
+	// Draw the main text
+	$txt2 = imagettftext($im, $size, $angle, $x, $y, $col, $fontfile, $text);
+}
+
+function hackerspace_status_generate_image($status, $text1, $text2) {
+	if ($status == "open") 			$image = "green";
+	else if ($status == "closed") 	$image = "red";
+	else 							$image = "yellow";
+		
+	$module_path = realpath('.') .'/'. drupal_get_path('module', 'hackerspace_status');
+	$files_path = realpath($module_path .'/../../files');
+
+	$im = imagecreatefrompng($module_path .'/images/'. $image .'.png');
+	    
+	$color = imagecolorallocate($im, 0, 0, 0);
+	$white = imagecolorallocate($im, 255, 255, 255);
+	$grey = imagecolorallocate($im, 128, 128, 128);
+	$black = imagecolorallocate($im, 0, 0, 0);	
+	
+	$font = $module_path .'/fonts/visitor2.ttf';
+    $size1 = 14;
+	$size2 = 13;
+
+	$stringsize = imagettfbbox($size2, 0, $font, $text2);
+	$dx = (imagesx($im)) - (abs($stringsize[2]-$stringsize[0])) - 1;
+
+	imagettftextoutline($im, $size1, 0, 5, 12, $white, $black, $font, $text1, 1);
+	imagettftext($im, $size2, 0, $dx, 25, $black, $font, $text2);
+    
+	imagepng($im, $files_path .'/hackerspace_status.png');
+    imagedestroy($im);
+}
+
+
+// Implementation of hook_block()
+function hackerspace_status_block($op='list', $delta=0, $edit=array()) {
+	global $moduleName;
+	
+	$block = array();
+
+	if($op == 'list') {
+		for($i=1;$i<variable_get($moduleName.'_number', '1')+1;$i++) {
+			$block[$i]["info"] = t('Hackerspace status');
+			$block[$i]["cache"] = BLOCK_NO_CACHE;
+		}
+	} else if ($op == 'view') {
+    	if (variable_get($moduleName.'_show_title', '1')==true) 
+			$block['subject'] = ucfirst($moduleName);
+		
+		// Get status from API
+		$url = "https://fixme.ch/cgi-bin/spaceapi.py";
+		$result = json_decode(file_get_contents($url));
+
+		$status = ($result->open == 1 ? "open" : "closed");
+		$from = $result->lastchange;
+		$hours = $result->duration;
+		$text1 = "";
+		$text2 = "";
+
+		set_status_message($status, $text1, $text2, $from, $hours);
+		hackerspace_status_generate_image($status, $text1, $text2);
+
+		$files_path = realpath(drupal_get_path('module', 'hackerspace_status') .'/../../files');
+		$block['content'] = '<img width="195" height="29" src="/sites/default/files/hackerspace_status.png" alt="'. $text1 .' '. $text2 .'" />';
+	}
+
+return $block;
+}
