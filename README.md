@@ -24,3 +24,6 @@ authorize the change of status.
 - ?do=custom&hours=x  Open the space for a specific amount of time in hour,
 - ?request            Request the state of the hackerspace, using the lock file
 
+Drupal
+------
+Druap module to show an image in a block of the status from spaceapi.py
