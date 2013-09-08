@@ -56,6 +56,7 @@ api = {
   'sensors': {
                 'people_now_present': [{
                   'value':        0,
+                  'unit':         'device(s)',
                   'location':     'FIXME Network',
                   'description':  'Number of devices on the network (excluding some devices)',
                 }],
