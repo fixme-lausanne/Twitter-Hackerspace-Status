@@ -57,17 +57,17 @@ api = {
                 'people_now_present': [{
                   'value':        0,
                   'location':     'FIXME Network',
-                  'description':  'Number of devices on the network (excluding some devices)', 
+                  'description':  'Number of devices on the network (excluding some devices)',
                 }],
                 'total_member_count': [
                   {
                     'value': 19, #05.09.2013
-                    'name': 'premium members',
+                    'unit': 'premium members',
                     'location': '5th, september 2013',
                   },
                   {
                     'value': 51, #05.09.2013
-                    'name': 'standard members',
+                    'unit': 'standard members',
                     'location': '5th, september 2013',
                   },
                 ],
