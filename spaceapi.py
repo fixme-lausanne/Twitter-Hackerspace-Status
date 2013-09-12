@@ -63,12 +63,10 @@ api = {
                   {
                     'value': 19, #05.09.2013
                     'unit': 'premium members',
-                    'location': '5th, september 2013',
                   },
                   {
-                    'value': 51, #05.09.2013
+                    'value': 50, #05.09.2013
                     'unit': 'standard members',
-                    'location': '5th, september 2013',
                   },
                 ],
              }
