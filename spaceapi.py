@@ -76,11 +76,11 @@ api = {
 # Get sensors data
 #
 try:
-    user_online = open('/var/log/user_online.log', 'r').read()
+    user_online = int(open('/var/log/user_online.log', 'r').read())
 except:
     user_online = 0
-    pass
-if user_online != '' and int(user_online) > 0:
+
+if user_online > 0:
     api['sensors']['people_now_present'][0]['value'] = user_online
 
 #
