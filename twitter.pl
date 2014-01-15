@@ -25,7 +25,7 @@ sub Usage {
 # IP check
 my $ip = $ENV{'REMOTE_ADDR'};
 if($ip !~ /^62\.220\.13\d\.\d{1,3}/ && $ip !~ /^2001:788:dead:beef/) {
-  print "This script is only accessible from within the hackerspace, sorry!<br/><br/>\n\nVisit <a href=\"https://fixme.ch\">fixme.ch</a> for more information. <br/><br/><small>" . $ENV{'REMOTE_ADDR'} . "</small>" ;
+  print "This script is only accessible from within the hackerspace, sorry!<br/><br/>\n\nVisit <a href=\"https://fixme.ch\">fixme.ch</a> for more information. <br/><br/><small>" . $ENV{'REMOTE_ADDR'} . "</small>\n" ;
   exit();
 }
 
@@ -87,13 +87,13 @@ if($client->authorized){
   print "updating status ... <br/>\n";
   my $ret = $client->update({status => $status});
   if ($ret == undef){
-    print $client->get_error();
+    print $client->get_error()."\n";
   }
   else {
-    print $status;
+    print $status."\n";
   }
 }else{
-  print "Client is not authorized anymore!";
+  print "Client is not authorized anymore!\n";
 }
 
 # Post Hackerspace status on website
