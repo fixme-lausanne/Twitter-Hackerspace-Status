@@ -32,6 +32,7 @@ if($ip !~ /^62\.220\.13\d\.\d{1,3}/ && $ip !~ /^2001:788:dead:beef/) {
 # Twitter OAuth
 my $client = Net::Twitter->new(
   #traits          => [qw/OAuth API::REST/],
+  apiurl          => "https://api.twitter.com/1.1",
   traits          => [qw/API::RESTv1_1/],
   consumer_key    => "",
   consumer_secret => "",
