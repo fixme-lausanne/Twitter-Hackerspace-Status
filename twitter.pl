@@ -68,7 +68,7 @@ if(param("do")) {
   else {
     &Usage();
   }
-  my $motd = `/usr/games/fortune -n 62 -s`;
+  my $motd = chomp(`/usr/games/fortune -n 62 -s`);
   $status .= " \"" . $motd . "\"";
 } elsif (param("request")) {
    if (-e "open") {
