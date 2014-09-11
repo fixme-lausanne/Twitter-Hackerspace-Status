@@ -51,24 +51,25 @@ my $client = Net::Twitter->new(
 my $status;
 my $date = strftime "%d.%m.%Y %H:%M", localtime;
 if(param("do")) {
-  my $motd = `/usr/games/fortune -n 50 -s`;
   my $do = param("do");
   if ($do =~ m/^open$/) {
     rename("closed", "open");
-    $status ="The space is open, you are welcome to come over! (" . $date . ") " . $motd;
+    $status ="The space is open, you are welcome to come over! (" . $date . ")";
   }
   elsif($do =~ m/^close[d]{0,1}$/) {
     rename("open", "closed");
-    $status = "The space is closed, see you later! (" . $date . ") " . $motd;
+    $status = "The space is closed, see you later! (" . $date . ")";
   }
   elsif($do =~ m/^custom$/ && param("hours") || $do =~ m/^open$/ && param("hours") ) {
     rename("closed", "open");
     my $hours = param("hours");
-    $status = "The space is open for " . $hours . "h, you are welcome to come over! (" . $date . ") " . $motd;
+    $status = "The space is open for " . $hours . "h, you are welcome to come over! (" . $date . ")";
   }
   else {
     &Usage();
   }
+  my $motd = `/usr/games/fortune -n 62 -s`;
+  $status .= " \"" . $motd . "\"";
 } elsif (param("request")) {
    if (-e "open") {
        print "The hackerspace seems to be open<br/>\n";
