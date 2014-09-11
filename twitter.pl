@@ -69,7 +69,7 @@ if(param("do")) {
     &Usage();
   }
   my $motd = chomp(`/usr/games/fortune -n 62 -s`);
-  $status .= " " . $motd;
+  $status .= " \"" . $motd . "\"";
 } elsif (param("request")) {
    if (-e "open") {
        print "The hackerspace seems to be open<br/>\n";
