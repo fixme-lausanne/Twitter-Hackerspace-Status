@@ -64,18 +64,17 @@ api = {
                 'people_now_present': [{
                   'value':        0,
                   'location':     'FIXME Network',
+                  'unit':         'device(s)',
                   'description':  'Number of devices on the network (excluding some devices)',
                 }],
                 'total_member_count': [
                   {
-                    'value': 19, #05.09.2013
-                    'name': 'premium members',
-                    'location': '5th, september 2013',
+                    'value': 24, #2014-09-24
+                    'unit': 'premium members',
                   },
                   {
-                    'value': 51, #05.09.2013
-                    'name': 'standard members',
-                    'location': '5th, september 2013',
+                    'value': 51, #2014-09-24
+                    'unit': 'standard members',
                   },
                 ],
              }
@@ -85,11 +84,11 @@ api = {
 # Get sensors data
 #
 try:
-    user_online = open('/var/log/user_online.log', 'r').read()
+    user_online = int(open('/var/log/user_online.log', 'r').read())
 except:
     user_online = 0
-    pass
-if user_online != '' and int(user_online) > 0:
+
+if user_online > 0:
     api['sensors']['people_now_present'][0]['value'] = user_online
 
 try:
