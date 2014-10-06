@@ -25,13 +25,13 @@ sub Usage {
 # IP check
 my $ip = $ENV{'REMOTE_ADDR'};
 if($ip !~ /^62\.220\.13\d\.\d{1,3}/ && $ip !~ /^2001:788:dead:beef/) {
-  print "This script is only accessible from within the hackerspace, sorry!<br/><br/>\n\nVisit <a href=\"https://fixme.ch\">fixme.ch</a> for more information. <br/><br/><small>" . $ENV{'REMOTE_ADDR'} . "</small>" ;
+  print "This script is only accessible from within the hackerspace, sorry!<br/><br/>\n\nVisit <a href=\"https://fixme.ch\">fixme.ch</a> for more information. <br/><br/><small>" . $ENV{'REMOTE_ADDR'} . "</small>\n" ;
   exit();
 }
 
 # Twitter OAuth
 my $client = Net::Twitter->new(
-  #traits          => [qw/OAuth API::REST/],
+  ssl             => 1,
   traits          => [qw/API::RESTv1_1/],
   consumer_key    => "",
   consumer_secret => "",
@@ -54,20 +54,23 @@ if(param("do")) {
   my $do = param("do");
   if ($do =~ m/^open$/) {
     rename("closed", "open");
-    $status ="The space is now open, you are welcome to come over! (" . $date . ")";
+    $status ="The space is open, you are welcome to come over! (" . $date . ")";
   }
   elsif($do =~ m/^close[d]{0,1}$/) {
     rename("open", "closed");
-    $status = "The space is now closed, see you later! (" . $date . ")";
+    $status = "The space is closed, see you later! (" . $date . ")";
   }
   elsif($do =~ m/^custom$/ && param("hours") || $do =~ m/^open$/ && param("hours") ) {
     rename("closed", "open");
     my $hours = param("hours");
-    $status = "The space is open for approx. " . $hours . "h, you are welcome to come over! (" . $date . ")";
+    $status = "The space is open for " . $hours . "h, you are welcome to come over! (" . $date . ")";
   }
   else {
     &Usage();
   }
+  my $motd = `/usr/games/fortune -n 62 -s`;
+  chomp $motd;
+  $status .= " \"" . $motd . "\"";
 } elsif (param("request")) {
    if (-e "open") {
        print "The hackerspace seems to be open<br/>\n";
@@ -86,13 +89,13 @@ if($client->authorized){
   print "updating status ... <br/>\n";
   my $ret = $client->update({status => $status});
   if ($ret == undef){
-    print $client->get_error();
+    print $client->get_error()."\n";
   }
   else {
-    print $status;
+    print $status."\n";
   }
 }else{
-  print "Client is not authorized anymore!";
+  print "Client is not authorized anymore!\n";
 }
 
 # Post Hackerspace status on website
