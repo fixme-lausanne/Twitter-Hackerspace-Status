@@ -54,10 +54,17 @@ api = {
               },
   'issue_report_channels': ['email', 'twitter'],
   'sensors': {
+                'temperature': [
+                    {
+                        'value': 0,
+                        'unit': '°C',
+                        'location': 'Bitcoin farm',
+                    }
+                ],
                 'people_now_present': [{
                   'value':        0,
                   'location':     'FIXME Network',
-                  'description':  'Number of devices on the network (excluding some devices)', 
+                  'description':  'Number of devices on the network (excluding some devices)',
                 }],
                 'total_member_count': [
                   {
@@ -84,6 +91,12 @@ except:
     pass
 if user_online != '' and int(user_online) > 0:
     api['sensors']['people_now_present'][0]['value'] = user_online
+
+try:
+    temp = open('/var/log/temp_1.log', 'r').read()
+except:
+    temp = 0
+api['sensors']['temperature'][0]['value'] = temp
 
 #
 # Get last 10 events
