@@ -63,7 +63,6 @@ api = {
                 ],
                 'people_now_present': [{
                   'value':        0,
-                  'location':     'FIXME Network',
                   'unit':         'device(s)',
                   'description':  'Number of devices on the network (excluding some devices)',
                 }],
