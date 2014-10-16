@@ -32,5 +32,5 @@ authorize the change of status.
 
 Drupal
 ------
-Druap module to show an image in a block of the status from spaceapi.py
+Drupal module to show an image in a block of the status from spaceapi.py
 
