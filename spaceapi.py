@@ -31,9 +31,9 @@ api = {
                 'wiki':       'https://wiki.fixme.ch',
               },
   'location': {
-                'lon':  6.613828,
-                'lat':  46.524652,
-                'address':  'Rue de Genève 79, 1004 Lausanne, Switzerland',
+                'lon':  6.591292,
+                'lat':  46.532372,
+                'address':  'Chemin du Closel 5, 1020 Renens, Switzerland',
               },
   'state':    {
                 'icon':     {
@@ -49,7 +49,6 @@ api = {
                 'calendar': {'type': 'ical','url': 'https://www.google.com/calendar/ical/sruulkb8vh28dim9bcth8emdm4%40group.calendar.google.com/public/basic.ics'},
               },
   'stream':   {
-                'mjpeg': 'http://62.220.135.212/mjpg/video.mjpg',
                 'html': 'http://webcam.fixme.ch',
               },
   'issue_report_channels': ['email', 'twitter'],
@@ -72,7 +71,7 @@ api = {
                     'unit': 'premium members',
                   },
                   {
-                    'value': 51, #2014-09-24
+                    'value': 52, #2014-11-04
                     'unit': 'standard members',
                   },
                 ],
