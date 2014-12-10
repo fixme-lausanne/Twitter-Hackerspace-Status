@@ -93,7 +93,7 @@ try:
     temp = open('/var/log/temp_1.log', 'r').read()
 except:
     temp = 0
-api['sensors']['temperature'][0]['value'] = temp
+api['sensors']['temperature'][0]['value'] = int(temp)
 
 #
 # Get last 10 events
