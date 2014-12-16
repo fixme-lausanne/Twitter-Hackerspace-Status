@@ -67,11 +67,11 @@ api = {
                 }],
                 'total_member_count': [
                   {
-                    'value': 24, #2014-09-24
+                    'value': 27, #2014-12-16
                     'unit': 'premium members',
                   },
                   {
-                    'value': 52, #2014-11-04
+                    'value': 54, #2014-12-16
                     'unit': 'standard members',
                   },
                 ],
