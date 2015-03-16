@@ -58,6 +58,11 @@ api = {
                         'value': 0,
                         'unit': '°C',
                         'location': 'Bitcoin farm',
+                    },
+                    {
+                        'value': 0,
+                        'unit': '°C',
+                        'location': 'Room',
                     }
                 ],
                 'people_now_present': [{
