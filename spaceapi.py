@@ -65,11 +65,11 @@ api = {
                         'location': 'Room',
                     }
                 ],
-                'people_now_present': [{
-                  'value':        0,
-                  'unit':         'device(s)',
-                  'description':  'Number of devices on the network (excluding some devices)',
-                }],
+                #'people_now_present': [{
+                #  'value':        0,
+                #  'unit':         'device(s)',
+                #  'description':  'Number of devices on the network (excluding some devices)',
+                #}],
                 'total_member_count': [
                   {
                     'value': 29, #2015-02-26
