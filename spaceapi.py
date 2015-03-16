@@ -104,7 +104,7 @@ if user_online > 0:
 nb_temp = 2
 for i in xrange(nb_temp):
     try:
-        temp = open('/var/log/temp_%s.log' % i+1, 'r').read()
+        temp = open('/var/log/temp_%d.log' % (i+1), 'r').read()
     except:
         temp = 0
     api['sensors']['temperature'][i]['value'] = int(temp)
