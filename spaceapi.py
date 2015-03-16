@@ -90,6 +90,8 @@ api = {
 #
 # Get sensors data
 #
+
+# People
 try:
     user_online = int(open('/var/log/user_online.log', 'r').read())
 except:
@@ -98,11 +100,14 @@ except:
 if user_online > 0:
     api['sensors']['people_now_present'][0]['value'] = user_online
 
-try:
-    temp = open('/var/log/temp_1.log', 'r').read()
-except:
-    temp = 0
-api['sensors']['temperature'][0]['value'] = int(temp)
+# Temp
+nb_temp = 2
+for i in xrange(nb_temp):
+    try:
+        temp = open('/var/log/temp_%s.log' % i+1, 'r').read()
+    except:
+        temp = 0
+    api['sensors']['temperature'][i]['value'] = int(temp)
 
 #
 # Get last 10 events
