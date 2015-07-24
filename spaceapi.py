@@ -92,21 +92,23 @@ api = {
 #
 
 # People
+user_online = 0
 try:
     user_online = int(open('/var/log/user_online.log', 'r').read())
 except:
-    user_online = 0
+    pass
 
 if user_online > 0:
     api['sensors']['people_now_present'][0]['value'] = user_online
 
 # Temp
 nb_temp = 2
+temp = 0.0
 for i in xrange(nb_temp):
     try:
         temp = open('/var/log/temp_%d.log' % (i+1), 'r').read()
     except:
-        temp = 0
+        pass
     api['sensors']['temperature'][i]['value'] = float(temp)
 
 #
@@ -122,8 +124,8 @@ try:
             'timestamp': ts,
             't':    ts,
         })
-except IOError,e:
-    print e
+except Exception,e:
+    pass
 
 #
 # Get Open/Close status
