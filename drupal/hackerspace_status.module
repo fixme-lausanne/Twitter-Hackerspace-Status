@@ -6,6 +6,27 @@ global $moduleName;
 $moduleName = "hackerspace_status";
 
 
+/**
+* Implements hook_help().
+*
+* Displays help and module information.
+*
+* @param path 
+*   Which path of the site we're using to display help
+* @param arg 
+*   Array that holds the current path as returned from arg() function
+*/
+
+function hackerspace_status_help($path, $arg)
+{
+  switch ($path)
+  {
+    case "admin/help#hackerspace_status":
+      return '' . t("Displays Hackersapce Status") . '';
+      break;
+  }
+} 
+
 // Additional functions
 function set_status_message(&$status, &$text1, &$text2, $from, $hours = 0) {
 	//$format = 'Y-m-d\TH:i:s';
@@ -55,7 +76,7 @@ function hackerspace_status_generate_image($status, $text1, $text2) {
 	else 							$image = "yellow";
 		
 	$module_path = realpath('.') .'/'. drupal_get_path('module', 'hackerspace_status');
-	$files_path = realpath($module_path .'/../../files');
+  $files_path = realpath($module_path .'/../../files');
 
 	$im = imagecreatefrompng($module_path .'/images/'. $image .'.png');
 	    
@@ -75,41 +96,45 @@ function hackerspace_status_generate_image($status, $text1, $text2) {
 	imagettftext($im, $size2, 0, $dx, 25, $black, $font, $text2);
     
 	imagepng($im, $files_path .'/hackerspace_status.png');
-    imagedestroy($im);
+  imagedestroy($im);
+}
+
+/*
+* Implements hook_block_info().
+*/
+
+function hackerspace_status_block_info()
+{
+  $blocks['hackerspace_status'] = array(
+  // The name that will appear in the block list.
+  'info' => t('Hackerspace status'),
+  // Default setting.
+  'cache' => DRUPAL_NO_CACHE,
+  );
+  
+  return $blocks;
 }
 
 
-// Implementation of hook_block()
-function hackerspace_status_block($op='list', $delta=0, $edit=array()) {
-	global $moduleName;
-	
-	$block = array();
 
-	if($op == 'list') {
-		for($i=1;$i<variable_get($moduleName.'_number', '1')+1;$i++) {
-			$block[$i]["info"] = t('Hackerspace status');
-			$block[$i]["cache"] = BLOCK_NO_CACHE;
-		}
-	} else if ($op == 'view') {
-    	if (variable_get($moduleName.'_show_title', '1')==true)
-			$block['subject'] = ucfirst($moduleName);
-
-		// Get status from API
-		$url = "https://fixme.ch/cgi-bin/spaceapi.py";
-		$result = json_decode(file_get_contents($url));
-
-		$status = ($result->state->open == 1 ? "open" : "closed");
-		$from = $result->state->lastchange;
-		$hours = $result->state->ext_duration;
-		$text1 = "";
-		$text2 = "";
-
-		set_status_message($status, $text1, $text2, $from, $hours);
-		hackerspace_status_generate_image($status, $text1, $text2);
-
-		$files_path = realpath(drupal_get_path('module', 'hackerspace_status') .'/../../files');
-		$block['content'] = '<img width="195" height="29" src="/sites/default/files/hackerspace_status.png" alt="'. $text1 .' '. $text2 .'" />';
-	}
-
-return $block;
+// Implementation of block_view()
+function hackerspace_status_block_view($delta = '') {
+  $block['subject'] = t('Hackerspace Status');
+  switch ($delta) {
+    case 'hackerspace_status':
+      // Get status from API
+      $url = "https://fixme.ch/cgi-bin/spaceapi.py";
+      $result = json_decode(file_get_contents($url));
+      $status = ($result->state->open == 1 ? "open" : "closed");
+      $from = $result->state->lastchange;
+      $hours = $result->state->ext_duration;
+      $text1 = "";
+      $text2 = "";
+      set_status_message($status, $text1, $text2, $from, $hours);
+      hackerspace_status_generate_image($status, $text1, $text2);
+      $files_path = realpath(drupal_get_path('module', 'hackerspace_status') .'/../../files');
+      $block['content']= '<img width="195" height="29" src="/sites/default/files/hackerspace_status.png" alt="'. $text1 .' '. $text2 .'" />';
+      }
+  return $block;
 }
+

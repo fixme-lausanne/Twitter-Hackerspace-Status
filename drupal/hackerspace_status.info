@@ -1,6 +1,6 @@
 ; $Id: Hackerspace Status $
 name = Hackerspace Status Module
 description = Hackerspace Status in Drupal Module.
-core = 6.x
+core = 7.x
 package = Hackerspace
 
