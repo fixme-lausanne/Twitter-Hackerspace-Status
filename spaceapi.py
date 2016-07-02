@@ -29,6 +29,7 @@ api = {
                 'ml':         'hackerspace-lausanne@lists.saitis.net',
                 'facebook':   'https://www.facebook.com/fixmehackerspace',
                 'wiki':       'https://wiki.fixme.ch',
+                'chat':       'https://chat.fixme.ch',
               },
   'location': {
                 'lon':  6.591292,
@@ -70,17 +71,17 @@ api = {
                   'unit':         'device(s)',
                   'description':  'Number of devices on the network (excluding some devices)',
                 }],
-                'total_member_count': [
+                'total_member_count': [ #2016-07-02
                   {
-                    'value': 45, #2016-05-09
+                    'value': 44,
                     'unit': 'premium members',
                   },
                   {
-                    'value': 65, #2016-05-09
+                    'value': 64,
                     'unit': 'standard members',
                   },
                   {
-                    'value': 110, #2016-05-09
+                    'value': 108,
                     'unit': 'total members',
                   },
                 ],
