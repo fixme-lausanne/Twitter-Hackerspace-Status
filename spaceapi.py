@@ -43,29 +43,29 @@ api = {
                 },
                 'ext_duration': 0, # Custom field for the open duration
               },
-  'events':   [],
+  #'events':   [],
   'feeds':    {
                 'blog': {'type': 'rss', 'url': 'https://fixme.ch/rss.xml'},
                 'wiki': {'type': 'rss', 'url': 'https://fixme.ch/w/index.php?title=Special:RecentChanges&feed=atom'},
                 'calendar': {'type': 'ical','url': 'https://www.google.com/calendar/ical/sruulkb8vh28dim9bcth8emdm4%40group.calendar.google.com/public/basic.ics'},
               },
-  'stream':   {
-                'html': 'http://webcam.fixme.ch',
-              },
+  #'stream':   {
+  #              'html': 'http://webcam.fixme.ch',
+  #            },
   'issue_report_channels': ['email', 'twitter'],
   'sensors': {
-                'temperature': [
-                    {
-                        'value': 0,
-                        'unit': '°C',
-                        'location': 'Bitcoin farm',
-                    },
-                    {
-                        'value': 0,
-                        'unit': '°C',
-                        'location': 'Room',
-                    }
-                ],
+                #'temperature': [
+                #    {
+                #        'value': 0,
+                #        'unit': '°C',
+                #        'location': 'Bitcoin farm',
+                #    },
+                #    {
+                #        'value': 0,
+                #        'unit': '°C',
+                #        'location': 'Room',
+                #    }
+                #],
                 'people_now_present': [{
                   'value':        0,
                   'unit':         'device(s)',
@@ -116,18 +116,18 @@ for i in xrange(nb_temp):
 #
 # Get last 10 events
 #
-try:
-    ical = vobject.readOne(open('./civicrm_ical.ics', 'r').read())
-    for e in ical.vevent_list[:10]:
-        ts = int(time.mktime(e.dtstart.value.timetuple()))
-        api['events'].append({
-            'name': e.summary.value,
-            'type': e.categories.value[0],
-            'timestamp': ts,
-            't':    ts,
-        })
-except Exception,e:
-    pass
+#try:
+#    ical = vobject.readOne(open('./civicrm_ical.ics', 'r').read())
+#    for e in ical.vevent_list[:10]:
+#        ts = int(time.mktime(e.dtstart.value.timetuple()))
+#        api['events'].append({
+#            'name': e.summary.value,
+#            'type': e.categories.value[0],
+#            'timestamp': ts,
+#            't':    ts,
+#        })
+#except Exception,e:
+#    pass
 
 #
 # Get Open/Close status
