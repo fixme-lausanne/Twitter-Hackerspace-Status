@@ -69,19 +69,19 @@ api = {
                 'people_now_present': [{
                   'value':        0,
                   'unit':         'device(s)',
-                  'description':  'Number of devices on the network (excluding some devices)',
+                  'description':  'Number of devices in the DHCP range',
                 }],
-                'total_member_count': [ #2016-07-02
+                'total_member_count': [ #2016-10-21
                   {
-                    'value': 44,
+                    'value': 46,
                     'unit': 'premium members',
                   },
                   {
-                    'value': 64,
+                    'value': 65,
                     'unit': 'standard members',
                   },
                   {
-                    'value': 108,
+                    'value': 111,
                     'unit': 'total members',
                   },
                 ],
