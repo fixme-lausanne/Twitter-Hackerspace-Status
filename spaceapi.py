@@ -34,7 +34,7 @@ api = {
   'location': {
                 'lon':  6.591292,
                 'lat':  46.532372,
-                'address':  'Chemin du Closel 5, 1020 Renens, Switzerland',
+                'address':  'Chemin du Closel 3, 1020 Renens, Switzerland',
               },
   'state':    {
                 'icon':     {
