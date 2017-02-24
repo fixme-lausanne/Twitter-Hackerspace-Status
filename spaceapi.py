@@ -133,7 +133,7 @@ for i in xrange(nb_temp):
 # Get Open/Close status
 #
 try:
-    db = MySQLdb.connect(host="localhost", user="***REMOVED***", passwd="***REMOVED***", db="hackerspace_status")
+    db = MySQLdb.connect(host="", user="", passwd="", db="")
     c = db.cursor()
     c.execute('select pub_date, duration, open from hackerspace_status order by id desc limit 1;')
     result = c.fetchone()
