@@ -8,6 +8,7 @@
 #   twitter.pl?request              #
 #####################################
 
+use IO::Socket;
 use Net::Twitter;
 use POSIX qw(strftime);
 use CGI qw(:standard);
@@ -68,6 +69,20 @@ if(param("do")) {
   else {
     &Usage();
   }
+#forward the update to spacestatusd
+  my $trig_ip = '62.220.135.248'; #foo.fixme.ch
+  my $trig_port = '42422';
+  my $sock = IO::Socket::INET->new( Proto => "tcp",
+   PeerAddr => $ip, PeerPort => $port, Reuse => 0, Timeout => 2);
+  if ($sock) {
+    $sock->send($do, 0);
+    $sock->close();
+    }
+  }
+   my $motd = `/usr/games/fortune -n 62 -s`;
+   chomp $motd;
+   $status .= " \"" . $motd . "\"";
+
   my $motd = `/usr/games/fortune -n 62 -s`;
   chomp $motd;
   $status .= " \"" . $motd . "\"";
