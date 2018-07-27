@@ -71,17 +71,17 @@ api = {
                   'unit':         'device(s)',
                   'description':  'Number of devices in the DHCP range',
                 }],
-                'total_member_count': [ #2017-03-07
+                'total_member_count': [ #2018-07-27
                   {
-                    'value': 39,
+                    'value': 41,
                     'unit': 'premium members',
                   },
                   {
-                    'value': 42,
+                    'value': 48,
                     'unit': 'standard members',
                   },
                   {
-                    'value': 81,
+                    'value': 89,
                     'unit': 'total members',
                   },
                 ],
