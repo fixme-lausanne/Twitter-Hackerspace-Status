@@ -73,7 +73,7 @@ api = {
                 }],
                 'total_member_count': [ #2019-10-12
                   {
-                    'value': 47,
+                    'value': 28,
                     'unit': 'premium members',
                   },
                   {
@@ -81,7 +81,7 @@ api = {
                     'unit': 'standard members',
                   },
                   {
-                    'value': 97,
+                    'value': 78,
                     'unit': 'total members',
                   },
                 ],
