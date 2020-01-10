@@ -98,6 +98,9 @@ if($client->authorized){
   print "Client is not authorized anymore!\n";
 }
 
+# Post to Mastodon
+system "/opt/tweet-toot/toot.sh";
+
 # Post Hackerspace status on website
 use DBI();
 
