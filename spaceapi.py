@@ -5,12 +5,34 @@ import cgitb, json, MySQLdb, sys, time
 from datetime import datetime
 import vobject
 from pprint import pprint
+import requests
 
 cgitb.enable()
 print 'Content-Type: application/json'
 #print 'Access-Control-Allow-Origin: *' #Provide this server side or in this script
 #print 'Cache-Control: no-cache'
 print
+
+# Power Consumption
+power_consumption = []
+flusko_uri = 'http://192.168.130.129:8080/sensor/{}?version=1.0&interval=minute&unit=watt'
+clamps_id = [
+    '34cde81adabfb1ce819eca8fea6949b6',
+    'b7755b5f3ec05fcdc67f449241a9912a',
+    'e67e0685f747b30d855108ab781abdfc',
+]
+
+i = 1
+for clamp in clamps_id:
+    req = requests.get(flusko_uri.format(clamp))
+    data = req.json()
+    power_consumption.append({
+        'value':        data[0][1],
+        'unit':         'W',
+        'location':     'fixme',
+        'name':         'L' + str(i),
+    })
+    i += 1
 
 #
 # Default description of the Space API
@@ -71,6 +93,7 @@ api = {
                   'unit':         'device(s)',
                   'description':  'Number of devices in the DHCP range',
                 }],
+                'power_consumption': power_consumption,
                 'total_member_count': [ #2019-10-12
                   {
                     'value': 28,
