@@ -13,6 +13,10 @@ use POSIX qw(strftime);
 use CGI qw(:standard);
 print "Content-Type: text/html", "\n\n";
 
+$mm_addrs = 'https://chat.fixme.ch'
+$mm_token = ''
+$mm_chann = ''
+
 sub Usage {
     print "<pre>USAGE:
     ?do=close           Close the space,
@@ -100,6 +104,11 @@ if($client->authorized){
 
 # Post to Mastodon
 system "/opt/tweet-toot/toot.sh";
+
+# Post to Mattermost
+system <<EOF
+curl --silent -X POST -H 'Content-Type: application/json' -d '{"channel_id":"$mm_chann", "message":"$status"}' -H 'Authorization: Bearer $mm_token' $mm_addrs/api/v4/posts
+EOF
 
 # Post Hackerspace status on website
 use DBI();
