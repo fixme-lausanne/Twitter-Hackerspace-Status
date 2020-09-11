@@ -13,9 +13,9 @@ use POSIX qw(strftime);
 use CGI qw(:standard);
 print "Content-Type: text/html", "\n\n";
 
-$mm_addrs = 'https://chat.fixme.ch'
-$mm_token = ''
-$mm_chann = ''
+$mm_addrs = 'https://chat.fixme.ch';
+$mm_token = '';
+$mm_chann = '';
 
 sub Usage {
     print "<pre>USAGE:
