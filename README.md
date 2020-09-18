@@ -29,6 +29,7 @@ authorize the change of status.
 
  cpan 'install Net::Twitter'
  apt-get install fortune
+ pip3 install twitter mysql-python arrow
 
 Drupal
 ------
