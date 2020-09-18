@@ -49,6 +49,10 @@ def Usage():
   ./command do hours</pre>\n""")
   sys.exit()
 
+if not os.environ['REMOTE_ADDR'].startswith('62.220.13'):
+  print('This script is only accessible from within the hackerspace, sorry!<br/><br/>\n\nVisit <a href=\"https://fixme.ch\">fixme.ch</a> for more information. <br/><br/><small>')
+  sys.exit()
+
 # Generate status
 date = datetime.datetime.now().strftime('%d.%m.%Y %H:%M')
 form = cgi.FieldStorage()
@@ -78,7 +82,8 @@ elif do == 'custom':
   status = 'The space is open for {}h, you are welcome to come over! ({})'.format(hours, date)
 else:
   Usage()
-# TODO: implement state like the perl script ?
+
+print('Updating status ...<br/>\n')
 
 # Fortune
 motd = subprocess.check_output('/usr/games/fortune -n 200 -s', shell=True)
