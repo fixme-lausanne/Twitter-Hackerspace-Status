@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+#!/usr/bin/python3
 
 #####################################
 #   query must be done like this:   #
@@ -7,16 +7,18 @@
 #   twitter.py?do=custom&hours=x    #
 #####################################
 
-#import twitter
+print("Content-type: text/ascii")
+print("")
+
 from twitter import Twitter, OAuth
 import mysql.connector
-import arrow
 import sys, os
 import subprocess
 import datetime
 import cgi
+import requests
 
-DEBUG = True
+DEBUG = False
 
 mm_addrs = 'https://chat.fixme.ch'
 mm_token = ''
@@ -48,7 +50,7 @@ def Usage():
   sys.exit()
 
 # Generate status
-date = arrow.get().format('D.MM.YYYY HH:MM')
+date = datetime.datetime.now().strftime('%d.%m.%Y %H:%M')
 form = cgi.FieldStorage()
 
 if DEBUG:
@@ -98,9 +100,9 @@ if DEBUG:
 status = status.replace('"', '')
 status = status.replace("'", '')
 status = status.replace('\n', ' ')
-output = subprocess.check_output("curl --silent -X POST -H 'Content-Type: application/json' -d '{{\"channel_id\":\"{}\", \"message\":\"{}\"}}' -H 'Authorization: Bearer {}' {}/api/v4/posts".format(mm_chann, status, mm_token, mm_addrs), shell=True)
+req = requests.post('{}/api/v4/posts'.format(mm_addrs), headers={'Authorization': 'Bearer {}'.format(mm_token)}, json={'channel_id': mm_chann, 'message': status})
 if DEBUG:
-  print('mastodon={}'.format(output))
+  print('mastodon={}'.format(req.content))
 
 ## Post Hackerspace status on website
 pub_date = datetime.datetime.now().strftime('%Y-%m-%d %H:%M:%S')
