@@ -131,10 +131,10 @@ temp = 0.0
 for i in xrange(nb_temp):
     try:
         temp = open('/var/log/temp_%d.log' % (i+1), 'r').read()
+        if temp != '':
+            api['sensors']['temperature'][i]['value'] = float(temp)
     except:
         pass
-    if temp != '':
-        api['sensors']['temperature'][i]['value'] = float(temp)
 
 #
 # Get last 10 events
